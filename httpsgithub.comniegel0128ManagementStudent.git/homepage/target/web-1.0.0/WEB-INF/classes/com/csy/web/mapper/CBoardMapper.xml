@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.csy.web.mapper.CBoardMapper">
+   <select id="selectAll" resultType="com.csy.web.cboard.CBoardBean">
+       SELECT * FROM cboard
+   </select>
+   <!-- 아이디검색 -->
+   <select id="selectById" parameterType="com.csy.web.cboard.CBoardBean" resultType="com.csy.web.cboard.CBoardBean">
+       SELECT * FROM cboard
+       WHERE id = #{cId}
+   </select>
+   <!-- 이름검색 -->
+   <select id="selectByName" parameterType="com.csy.web.cboard.CBoardBean" resultType="com.csy.web.cboard.CBoardBean">
+       SELECT * FROM cboard
+       WHERE name = #{cName}
+   </select>
+   <!-- 글 추가 -->
+   <insert id="insert" parameterType="com.csy.web.cboard.CBoardBean">
+	INSERT INTO cboard(
+	c_seq
+	,c_title
+	,c_des
+	,c_use_yn
+	,c_reg_user_id
+	,c_reg_date
+	,c_file_src1
+	,c_file_src2
+	,c_uid)
+	values
+	('1'
+	,'#{cTitle}'
+	,'#{cDes}'
+	,'y'
+	,'#{cRegUserId}'
+	,now()
+	,'#{cFileSrc1}'
+	,'#{cFileSrc2}'
+	,date_format(now()
+	,'%Y%m%d%H%i%s%f'));    
+   </insert>
+   <!-- 글 수정 -->
+   <update id="update" parameterType="com.csy.web.cboard.CBoardBean">
+   UPDATE cboard 
+   SET 
+	   c_title = #{cTitle},
+	   c_des = #{cDes},
+	   c_file_src1 = #{cFileSrc1},
+	   c_file_src2 = #{cFileSrc2}
+   WHERE   
+   	   c_reg_user_id = #{cRegUserId}
+   </update>
+   <!-- 글 삭제  cboardSeq-->
+   <delete id="delete" parameterType="com.csy.web.cboard.CBoardBean">
+       DELETE FROM cboard 
+       WHERE c_seq = #{cboardSeq}; 
+   </delete>
+</mapper>							

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="com.csy.web.mapper.AttentMapper">
+      <insert id="insert"></insert>
+      <select id="selectAll" resultType="com.csy.web.attend.AttendBean">
+		SELECT * FROM attend;          
+      </select>
+      <select id="selectByName">
+          SELECT * FROM attend
+          WHERE name =#{atName}
+      </select>
+      <select id="selectById">
+          SELECT * FROM attend
+          WHERE id = #{atId}
+      </select>
+      <select id="count">
+          SELECY COUNT(*) FROM attend
+      </select>
+  </mapper>
