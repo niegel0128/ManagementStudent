@@ -33,7 +33,7 @@ public class StudentController {
 	@RequestMapping("/login")
 	public String login(){
 		LOGGER.info("StudentBean : GET");
-		return "student/main.stu";
+		return "global/login.stu";
 	}	
 	
 	@RequestMapping(value="/login",method=RequestMethod.POST)
@@ -49,11 +49,51 @@ public class StudentController {
 		if (student != null) {
 			LOGGER.info("로그인 성공");
 			/*view = "redirect:/student/content/"+id;*/
-			view = "student/main.stu";
+			view = "auth/student/main.stu";
 		} else {
 			LOGGER.info("로그인 실패");
 			view = "student/login";
 		}
+		return view;
+	}
+	
+	@RequestMapping("/signup")
+	public String signup(){
+		LOGGER.info("signup : GET");
+		return "global/signup.stu";
+	}	
+	
+	@RequestMapping(value ="/signup",method=RequestMethod.POST )
+	public String signup(@RequestParam("id")String id,
+						@RequestParam("password")String password,
+						@RequestParam("name")String name,
+						@RequestParam("tel")String tel,
+						@RequestParam("email")String email,
+						@RequestParam("profileImg")String profileImg,
+						HttpSession session,
+						Model model){
+		LOGGER.info("signup : POST");
+		StudentBean stu = new StudentBean();
+		stu.setId(id);
+		stu.setPassword(password);
+		stu.setName(name);
+		stu.setTel(tel);
+		stu.setEmail(email);
+		stu.setProfileImg(profileImg);
+		LOGGER.info("회원가입 컨트롤러 파라미터 ID : {}",id);
+		LOGGER.info("회원가입 컨트롤러 파라미터 PW : {}",password);
+		LOGGER.info("회원가입 컨트롤러 파라미터 name : {}",name);
+		LOGGER.info("회원가입 컨트롤러 파라미터 tel : {}",tel);
+		LOGGER.info("회원가입 컨트롤러 파라미터 email : {}",email);
+		LOGGER.info("회원가입 컨트롤러 파라미터 profileImg : {}",profileImg);
+		int res = service.add(stu);
+		String view = "";
+		if (res == 1) {
+			view = "global/login.stu";
+		} else {
+			view = "global/signup.stu";
+		}
+		
 		return view;
 	}
 }

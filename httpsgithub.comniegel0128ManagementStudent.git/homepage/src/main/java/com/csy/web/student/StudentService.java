@@ -3,7 +3,7 @@ package com.csy.web.student;
 import java.util.List;
 
 public interface StudentService {
-	public int add(StudentBean StudentBean);
+	public abstract int add(StudentBean stu);
 	public List<StudentBean> list();
 	public List<StudentBean> getByName(StudentBean StudentBean);
 	public StudentBean getById(StudentBean StudentBean);

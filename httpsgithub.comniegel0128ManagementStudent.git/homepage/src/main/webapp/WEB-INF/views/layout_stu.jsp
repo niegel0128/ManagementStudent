@@ -23,4 +23,5 @@
 	<tiles:insertAttribute name="footer" />
 	</div>
 </body>
+<script src="${js}/Signup.js}"></script>
 </html>
