@@ -20,3 +20,15 @@ INSERT INTO student(s_id,s_name,s_password,s_tel,s_email,s_use_yn,
 s_profile_img,s_role,s_uid)
 values ('cho','조조조','1','000-0000-0000','cho@student.com','y',
 'student.png','1',date_format(now(),'%Y%m%d%H%i%s%f'));
+
+INSERT INTO student(
+	s_id
+	,s_name
+	,s_password
+	,s_tel
+	,s_email
+	,s_use_yn
+	,s_profile_img,s_role,s_uid)
+values ('cho','조조조','1','000-0000-0000','cho@student.com','y',
+'student.png','1',date_format(now(),'%Y%m%d%H%i%s%f'));
+

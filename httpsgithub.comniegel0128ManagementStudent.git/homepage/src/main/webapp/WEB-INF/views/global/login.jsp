@@ -23,10 +23,10 @@
 		$('form').attr('action','${context}/student/login')
 		.attr('method','post').submit();
 		});
-	$('#signinButton').click(function() {
+	$('#signupButton').click(function() {
 		alert('회원가입 버튼클릭!');
 		$('form').attr('action','${context}/student/signup')
-		.attr('method','post').submit();
+		.attr('method','get').submit();
 		});
 	});
 </script>

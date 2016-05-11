@@ -18,4 +18,5 @@ public interface StudentMapper {
 	//////////////////////////////////////////
 	
 	public StudentBean login(StudentBean StudentBean);
+	public StudentBean signup(StudentBean stu);
 }

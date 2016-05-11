@@ -17,9 +17,10 @@ public class StudentServiceImpl implements StudentService{
 	@Autowired SqlSession session;
 	@Autowired StudentBean student;
 	@Override
-	public int add(StudentBean StudentBean) {
-		LOGGER.info("StudentServiceImpl: add");
-		return 0;
+	public int add(StudentBean stu) {
+		  LOGGER.info("StudentServiceImpl : add() 진입 후 id = {}",stu.getId());
+		  StudentMapper mapper = session.getMapper(StudentMapper.class);
+		  return mapper.insert(stu);
 	}
 
 	@Override
