@@ -5,18 +5,18 @@ import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
-import com.csy.web.student.StudentBean;
+import com.csy.web.student.StudentDTO;
 @Repository
 public interface StudentMapper {
-	public int insert(StudentBean StudentBean);
-	public List<StudentBean> selectAll();
-	public List<StudentBean> selectByName(StudentBean StudentBean);
-	public StudentBean selectById(StudentBean StudentBean);
+	public int insert(StudentDTO StudentDTO);
+	public List<StudentDTO> selectAll();
+	public List<StudentDTO> selectByName(StudentDTO StudentDTO);
+	public StudentDTO selectById(StudentDTO StudentDTO);
 	public int count();
-	public int update(StudentBean StudentBean);
-	public int delete(StudentBean StudentBean);
+	public int update(StudentDTO StudentDTO);
+	public int delete(StudentDTO StudentDTO);
 	//////////////////////////////////////////
 	
-	public StudentBean login(StudentBean StudentBean);
-	public StudentBean signup(StudentBean stu);
+	public StudentDTO login(StudentDTO StudentDTO);
+	public StudentDTO signup(StudentDTO stu);
 }

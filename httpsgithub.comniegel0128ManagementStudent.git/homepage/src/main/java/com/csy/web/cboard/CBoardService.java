@@ -6,12 +6,12 @@ import com.csy.web.admin.AdminBean;
 
 public interface CBoardService {
 	
-	public int add(CBoardBean cBoardBean);
+	public int add(CBoardDTO cBoardBean);
 	//메인 데이터 출력
-	public List<CBoardBean> list();
-	public List<CBoardBean> getByName(CBoardBean cBoardBean);
-	public AdminBean getById(CBoardBean cBoardBean);
+	public List<CBoardDTO> list();
+	public List<CBoardDTO> getByName(CBoardDTO cBoardBean);
+	public List<CBoardDTO> getById(CBoardDTO cBoardBean);
 	public int count();
-	public int change(CBoardBean cBoardBean);
-	public int remove(CBoardBean cBoardBean);	
+	public int change(CBoardDTO cBoardBean);
+	public int remove(CBoardDTO cBoardBean);	
 }

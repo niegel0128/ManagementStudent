@@ -1,5 +1,9 @@
 package com.csy.web.cboard;
 
+import static org.junit.Assert.*;
+import static org.hamcrest.CoreMatchers.is ;
+import static org.hamcrest.CoreMatchers.not ;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,18 +20,18 @@ public class CBoardServiceImpl implements CBoardService{
 	private static final Logger LOGGER = LoggerFactory
 			.getLogger(CBoardServiceImpl.class);
 	@Autowired SqlSession SqlSession;
-	@Autowired CBoardBean CBoardBean;
+	@Autowired CBoardDTO cboard;
 	
 	@Override
-	public int add(CBoardBean cBoardBean) {
+	public int add(CBoardDTO CBoardDTO) {
 		LOGGER.info("cBoardServiceImpl : add");
 		return 0;
 	}
 
 	@Override
-	public List<CBoardBean> list() {
+	public List<CBoardDTO> list() {
 		LOGGER.info("cBoardServiceImpl : list");
-		List<CBoardBean> list = new ArrayList<CBoardBean>();
+		List<CBoardDTO> list = new ArrayList<CBoardDTO>();
 		CBoardMapper mapper = SqlSession.getMapper(CBoardMapper.class);
 		list = mapper.selectAll();
 		LOGGER.info("게시판 글 수  : {}",list.size());
@@ -35,13 +39,18 @@ public class CBoardServiceImpl implements CBoardService{
 	}
 
 	@Override
-	public List<CBoardBean> getByName(CBoardBean cBoardBean) {
+	public List<CBoardDTO> getByName(CBoardDTO CBoardDTO) {
 		LOGGER.info("cBoardServiceImpl : getByName");
+		/*CBoardMapper mapper = SqlSession.getMapper(CBoardMapper.class);
+		List<CBoardDTO> list = new ArrayList<CBoardDTO>();
+		cboard.setRegUserId("cho");
+		list = mapper.selectById(cboard);
+		assertThat(list.size(),is(not(0)));*/
 		return null;
 	}
 
 	@Override
-	public AdminBean getById(CBoardBean cBoardBean) {
+	public List<CBoardDTO> getById(CBoardDTO CBoardDTO) {
 		LOGGER.info("cBoardServiceImpl : getByName");
 		return null;
 	}
@@ -53,13 +62,13 @@ public class CBoardServiceImpl implements CBoardService{
 	}
 
 	@Override
-	public int change(CBoardBean cBoardBean) {
+	public int change(CBoardDTO CBoardDTO) {
 		LOGGER.info("cBoardServiceImpl : change");
 		return 0;
 	}
 
 	@Override
-	public int remove(CBoardBean cBoardBean) {
+	public int remove(CBoardDTO CBoardDTO) {
 		LOGGER.info("cBoardServiceImpl : remove");
 		return 0;
 	}

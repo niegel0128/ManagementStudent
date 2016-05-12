@@ -15,18 +15,18 @@ import com.csy.web.mapper.StudentMapper;
 public class StudentServiceImpl implements StudentService{
 	private static final Logger LOGGER = LoggerFactory.getLogger(StudentService.class);
 	@Autowired SqlSession session;
-	@Autowired StudentBean student;
+	@Autowired StudentDTO student;
 	@Override
-	public int add(StudentBean stu) {
+	public int add(StudentDTO stu) {
 		  LOGGER.info("StudentServiceImpl : add() 진입 후 id = {}",stu.getId());
 		  StudentMapper mapper = session.getMapper(StudentMapper.class);
 		  return mapper.insert(stu);
 	}
 
 	@Override
-	public List<StudentBean> list() {
+	public List<StudentDTO> list() {
 		LOGGER.info("StudentServiceImpl: list");
-		List<StudentBean> list = new ArrayList<StudentBean>();
+		List<StudentDTO> list = new ArrayList<StudentDTO>();
 		StudentMapper mapper = session.getMapper(StudentMapper.class);
 		list = mapper.selectAll();
 		LOGGER.info("서비스 학생수 :{}",list.size());
@@ -34,13 +34,13 @@ public class StudentServiceImpl implements StudentService{
 	}
 
 	@Override
-	public List<StudentBean> getByName(StudentBean StudentBean) {
+	public List<StudentDTO> getByName(StudentDTO StudentDTO) {
 		LOGGER.info("StudentServiceImpl: getByName");
 		return null;
 	}
 
 	@Override
-	public StudentBean getById(StudentBean StudentBean) {
+	public StudentDTO getById(StudentDTO StudentDTO) {
 		LOGGER.info("StudentServiceImpl: getById");
 		return null;
 	}
@@ -52,20 +52,20 @@ public class StudentServiceImpl implements StudentService{
 	}
 
 	@Override
-	public int change(StudentBean StudentBean) {
+	public int change(StudentDTO StudentDTO) {
 		LOGGER.info("StudentServiceImpl: change");
 		return 0;
 	}
 
 	@Override
-	public int remove(StudentBean StudentBean) {
+	public int remove(StudentDTO StudentDTO) {
 		LOGGER.info("StudentServiceImpl: remove");
 		return 0;
 	}
 
 
 	@Override
-	public StudentBean login(StudentBean stu) {
+	public StudentDTO login(StudentDTO stu) {
 		// TODO Auto-generated method stub
 		LOGGER.info("StudentServiceImpl:login");
 		StudentMapper StudentMapper = session.getMapper(StudentMapper.class);

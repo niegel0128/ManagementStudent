@@ -20,11 +20,11 @@ public class StudentController {
 	private static final Logger LOGGER = LoggerFactory
 			.getLogger(StudentController.class);
 	@Autowired StudentService service;
-	@Autowired StudentBean student; 
+	@Autowired StudentDTO student; 
 	
 	@RequestMapping("/list")
 	public void list(){
-		List<StudentBean> list = new ArrayList<StudentBean>();
+		List<StudentDTO> list = new ArrayList<StudentDTO>();
 		list = service.list();
 		LOGGER.info("컨트롤러 학생수 :{}",list.size());
 		
@@ -32,7 +32,7 @@ public class StudentController {
 	
 	@RequestMapping("/login")
 	public String login(){
-		LOGGER.info("StudentBean : GET");
+		LOGGER.info("StudentDTO : GET");
 		return "global/login.stu";
 	}	
 	
@@ -41,7 +41,7 @@ public class StudentController {
 			HttpSession session,Model model){
 		LOGGER.info("로그인 컨트롤러 파라미터 ID : {}",id);
 		LOGGER.info("로그인 컨트롤러 파라미터 PW : {}",password);
-		StudentBean stu = new StudentBean();
+		StudentDTO stu = new StudentDTO();
 		stu.setId(id);
 		stu.setPassword(password);
 		student = service.login(stu);
@@ -73,7 +73,7 @@ public class StudentController {
 						HttpSession session,
 						Model model){
 		LOGGER.info("signup : POST");
-		StudentBean stu = new StudentBean();
+		StudentDTO stu = new StudentDTO();
 		stu.setId(id);
 		stu.setPassword(password);
 		stu.setName(name);

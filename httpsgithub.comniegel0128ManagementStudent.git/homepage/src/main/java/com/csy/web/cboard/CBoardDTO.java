@@ -3,8 +3,8 @@ package com.csy.web.cboard;
 import org.springframework.stereotype.Component;
 
 @Component
-public class CBoardBean {
-	private String title,des,useYn,regUserId,regDate,fileSrc1,fileSrc2,uid;
+public class CBoardDTO {
+	private String title,des,useYn,regUserId,regDate,fileSrc1,fileSrc2,uid,regUserName;
 	private int seq;
 	
 	public String getTitle() {
@@ -12,6 +12,9 @@ public class CBoardBean {
 	}
 	public String getDes() {
 		return des;
+	}
+	public String getRegUserName() {
+		return regUserName;
 	}
 	public String getUseYn() {
 		return useYn;
@@ -61,5 +64,8 @@ public class CBoardBean {
 	}
 	public void setSeq(int seq) {
 		this.seq = seq;
+	}
+	public void setRegUserName(String regUserName) {
+		this.regUserName = regUserName;
 	}
 }

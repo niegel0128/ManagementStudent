@@ -3,7 +3,7 @@ package com.csy.web.student;
 import org.springframework.stereotype.Component;
 
 @Component
-public class StudentBean {
+public class StudentDTO {
 	private String id,name,password,tel,email,useYn,profileImg,role,uid;
 	
 	public String getId() {

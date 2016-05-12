@@ -3,57 +3,80 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.csy.web.mapper.CBoardMapper">
-   <select id="selectAll" resultType="com.csy.web.cboard.CBoardBean">
-       SELECT * FROM cboard
+   
+   <select id="selectAll" resultType="com.csy.web.cboard.CBoardDTO">
+       SELECT a.c_title as title
+		,a.c_des as des
+		,b.s_name as name
+		,lpad(a.c_reg_Date,10,0) as regDate
+		FROM cboard a , student b
+		where a.c_reg_user_id = b.s_id
+		AND c_use_yn = 'y'
+		order by a.c_reg_Date desc;
    </select>
+   
    <!-- 아이디검색 -->
-   <select id="selectById" parameterType="com.csy.web.cboard.CBoardBean" resultType="com.csy.web.cboard.CBoardBean">
-       SELECT * FROM cboard
-       WHERE id = #{cId}
+   <select id="selectById" parameterType="com.csy.web.cboard.CBoardDTO" resultType="com.csy.web.cboard.CBoardDTO">
+	SELECT c_title as title
+		,c_des as des
+		,c_reg_user_name as name
+		,lpad(c_reg_Date,10,0) as regDate
+	FROM cboard
+	where c_reg_user_id
+	AND c_reg_user_id = #{regUserId}
+	AND c_use_yn = 'y'
+	order by c_reg_Date desc;
    </select>
+   
    <!-- 이름검색 -->
-   <select id="selectByName" parameterType="com.csy.web.cboard.CBoardBean" resultType="com.csy.web.cboard.CBoardBean">
-       SELECT * FROM cboard
-       WHERE name = #{cName}
+   <select id="selectByName" parameterType="com.csy.web.cboard.CBoardDTO" resultType="com.csy.web.cboard.CBoardDTO">
+	SELECT c_title as title
+		,c_des as des
+		,c_reg_user_name as name
+		,lpad(c_reg_Date,10,0) as regDate
+	FROM cboard
+	where c_reg_user_name = #{regUserName}
+	AND c_use_yn = 'y'
+	order by c_reg_Date desc;
    </select>
+   
+   <select id="count" resultType="int">
+       SELECT count(*) FROM cboard
+       where c_use_yn = 'y';
+   </select>
+   
    <!-- 글 추가 -->
-   <insert id="insert" parameterType="com.csy.web.cboard.CBoardBean">
-	INSERT INTO cboard(
-	c_seq
-	,c_title
-	,c_des
-	,c_use_yn
-	,c_reg_user_id
-	,c_reg_date
-	,c_file_src1
-	,c_file_src2
-	,c_uid)
-	values
-	('1'
-	,'#{cTitle}'
-	,'#{cDes}'
+   <insert id="insert" parameterType="com.csy.web.cboard.CBoardDTO">
+	INSERT INTO cboard(c_title,c_des,c_use_yn,c_reg_user_id,
+	c_reg_date,c_file_src1,c_file_src2,c_uid,c_reg_user_name)
+	values (#{title}
+	,#{des}
 	,'y'
-	,'#{cRegUserId}'
+	,#{regUserId}
 	,now()
-	,'#{cFileSrc1}'
-	,'#{cFileSrc2}'
-	,date_format(now()
-	,'%Y%m%d%H%i%s%f'));    
+	,#{fileSrc1}
+	,#{fileSrc2}
+	,date_format(now(),'%Y%m%d%H%i%s%f')
+	,#{regUserName});
    </insert>
+   
    <!-- 글 수정 -->
-   <update id="update" parameterType="com.csy.web.cboard.CBoardBean">
+   <update id="update" parameterType="com.csy.web.cboard.CBoardDTO">
    UPDATE cboard 
    SET 
-	   c_title = #{cTitle},
-	   c_des = #{cDes},
-	   c_file_src1 = #{cFileSrc1},
-	   c_file_src2 = #{cFileSrc2}
+	   c_title = #{title},
+	   c_des = #{des},
+	   c_file_src1 = #{fileSrc1},
+	   c_file_src2 = #{fileSrc2}
    WHERE   
-   	   c_reg_user_id = #{cRegUserId}
+   	   c_seq = #{seq}; 
    </update>
+   
    <!-- 글 삭제  cboardSeq-->
-   <delete id="delete" parameterType="com.csy.web.cboard.CBoardBean">
-       DELETE FROM cboard 
-       WHERE c_seq = #{cboardSeq}; 
+   <delete id="delete" parameterType="com.csy.web.cboard.CBoardDTO">
+       update cboard
+       set c_use_yn = 'n' 
+       WHERE c_seq = #{seq}; 
    </delete>
+   
 </mapper>							
