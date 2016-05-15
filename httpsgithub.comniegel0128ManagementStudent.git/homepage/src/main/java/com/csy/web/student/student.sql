@@ -31,4 +31,16 @@ INSERT INTO student(
 	,s_profile_img,s_role,s_uid)
 values ('cho','조조조','1','000-0000-0000','cho@student.com','y',
 'student.png','1',date_format(now(),'%Y%m%d%H%i%s%f'));
-
+--
+SELECT 
+         s_id as id
+		,s_name as name
+		,s_password as password
+		,s_tel as tel
+		,s_email as email
+		,s_use_yn as useYn
+	    ,s_profile_img as profileImg
+		,s_role as role
+		,s_uid as uid
+       FROM student
+       WHERE s_id = 'cho' AND s_password = '1'

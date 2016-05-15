@@ -27,8 +27,15 @@
    </insert>
    <select id="login" resultType="com.csy.web.student.StudentDTO" parameterType="com.csy.web.student.StudentDTO">
       SELECT 
-       s_id as id
-      ,s_password as password
+         s_id as id
+		,s_name as name
+		,s_password as password
+		,s_tel as tel
+		,s_email as email
+		,s_use_yn as useYn
+	    ,s_profile_img as profileImg
+		,s_role as role
+		,s_uid as uid
        FROM student
       WHERE s_id = #{id} AND s_password = #{password}
    </select>
