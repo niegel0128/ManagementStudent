@@ -13,6 +13,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.support.SessionStatus;
 
 @Controller
 @RequestMapping("/student")
@@ -95,5 +96,42 @@ public class StudentController {
 		}
 		
 		return view;
+	}
+	
+	@RequestMapping("/logout")
+	public String logout(SessionStatus status){
+		LOGGER.info("StudentController : logout");
+		status.setComplete();
+		return "redirect:/";
+	}
+	
+	@RequestMapping("/newitem")
+	public String newitem(){
+		LOGGER.info("StudentController : newitem");
+		return "auth/student/newitem.stu";
+	}	
+	
+	@RequestMapping("/graph")
+	public String graph(){
+		LOGGER.info("StudentController : newitem");
+		return "auth/student/graph.stu";
+	}	
+	
+	@RequestMapping("/cboard")
+	public String cboard(){
+		LOGGER.info("StudentController : cboard");
+		return "auth/student/cboard.stu";
+	}	
+	
+	@RequestMapping("/calendar")
+	public String calendar(){
+		LOGGER.info("StudentController : calendar");
+		return "auth/student/calendar.stu";
+	}
+	
+	@RequestMapping("/main")
+	public String main(){
+		LOGGER.info("signup : GET");
+		return "auth/student/main.stu";
 	}
 }
