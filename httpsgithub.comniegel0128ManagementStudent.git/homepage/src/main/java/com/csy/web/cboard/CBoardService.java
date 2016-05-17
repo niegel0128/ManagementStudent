@@ -2,8 +2,6 @@ package com.csy.web.cboard;
 
 import java.util.List;
 
-import com.csy.web.admin.AdminBean;
-
 public interface CBoardService {
 	
 	public int add(CBoardDTO cBoardBean);

@@ -1,9 +1,5 @@
 package com.csy.web.cboard;
 
-import static org.junit.Assert.*;
-import static org.hamcrest.CoreMatchers.is ;
-import static org.hamcrest.CoreMatchers.not ;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,7 +9,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.csy.web.admin.AdminBean;
 import com.csy.web.mapper.CBoardMapper;
 @Service
 public class CBoardServiceImpl implements CBoardService{

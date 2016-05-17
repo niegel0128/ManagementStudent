@@ -4,7 +4,6 @@ import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
-import com.csy.web.admin.AdminBean;
 import com.csy.web.cboard.CBoardDTO;
 @Repository
 public interface CBoardMapper {
