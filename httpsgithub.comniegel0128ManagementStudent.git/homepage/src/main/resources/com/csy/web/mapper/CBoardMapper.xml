@@ -5,14 +5,13 @@
 <mapper namespace="com.csy.web.mapper.CBoardMapper">
    
    <select id="selectAll" resultType="com.csy.web.cboard.CBoardDTO">
-       SELECT a.c_title as title
-		,a.c_des as des
-		,b.s_name as name
-		,lpad(a.c_reg_Date,10,0) as regDate
-		FROM cboard a , student b
-		where a.c_reg_user_id = b.s_id
-		AND c_use_yn = 'y'
-		order by a.c_reg_Date desc;
+       SELECT c_title as title
+		,c_des as des
+		,lpad(c_reg_Date,10,0) as regDate
+		,c_file_src1 as fileSrc1
+		FROM cboard 
+		where c_use_yn = 'y'
+		order by c_reg_Date desc;
    </select>
    
    <!-- 아이디검색 -->

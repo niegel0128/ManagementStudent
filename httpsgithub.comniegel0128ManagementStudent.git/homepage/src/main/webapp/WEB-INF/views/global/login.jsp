@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
  <div class="container">
-   <form class="form-signin">
+   <form class="form-signin" method="post">
      <h2 class="form-signin-heading">로그인</h2>
      <input type="text" id="id" name="id" class="form-control" placeholder="Id" required value="">
      <input type="password" id="password" name="password" class="form-control" required placeholder="Password" value="">
@@ -14,5 +14,6 @@
 	$(function() {
 		student.login('${context}');
 		student.join('${context}');
+		student.main('${context}');
 	});
 </script>

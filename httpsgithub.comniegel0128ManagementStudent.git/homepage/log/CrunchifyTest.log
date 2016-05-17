@@ -1,0 +1,946 @@
+2016-05-17 16:15:43 [main] INFO  XmlBeanDefinitionReader:315 - Loading XML bean definitions from file [C:\Users\CSY\Documents\ManagementStudent\httpsgithub.comniegel0128ManagementStudent.git\homepage\target\classes\META-INF\file-context.xml]
+2016-05-17 16:15:43 [main] INFO  XmlBeanDefinitionReader:315 - Loading XML bean definitions from file [C:\Users\CSY\Documents\ManagementStudent\httpsgithub.comniegel0128ManagementStudent.git\homepage\target\classes\META-INF\handler-context.xml]
+2016-05-17 16:15:43 [main] INFO  XmlBeanDefinitionReader:315 - Loading XML bean definitions from file [C:\Users\CSY\Documents\ManagementStudent\httpsgithub.comniegel0128ManagementStudent.git\homepage\target\classes\META-INF\mybatis-context.xml]
+2016-05-17 16:15:43 [main] INFO  XmlBeanDefinitionReader:315 - Loading XML bean definitions from file [C:\Users\CSY\Documents\ManagementStudent\httpsgithub.comniegel0128ManagementStudent.git\homepage\target\classes\META-INF\servlet-context.xml]
+2016-05-17 16:15:43 [main] INFO  XmlBeanDefinitionReader:315 - Loading XML bean definitions from file [C:\Users\CSY\Documents\ManagementStudent\httpsgithub.comniegel0128ManagementStudent.git\homepage\target\classes\META-INF\tiles-context.xml]
+2016-05-17 16:15:43 [main] INFO  XmlBeanDefinitionReader:315 - Loading XML bean definitions from file [C:\Users\CSY\Documents\ManagementStudent\httpsgithub.comniegel0128ManagementStudent.git\homepage\target\classes\META-INF\view-context.xml]
+2016-05-17 16:15:43 [main] INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@314c508a: startup date [Tue May 17 16:15:43 KST 2016]; root of context hierarchy
+2016-05-17 16:15:43 [main] INFO  PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [config/mysql.properties]
+2016-05-17 16:15:43 [main] INFO  PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [config/mysql.properties]
+2016-05-17 16:15:43 [main] INFO  AutowiredAnnotationBeanPostProcessor:141 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-05-17 16:15:43 [main] INFO  DefaultListableBeanFactory:598 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@38102d01: defining beans [multipartResolver,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSourceSpied,dataSource,transactionManager,sqlSessionFactory,sqlSession,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#1,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,adminBean,adminServiceImpl,attendBean,attendServiceImpl,CBoardController,CBoardDTO,CBoardServiceImpl,globalController,studentController,studentDTO,studentServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,tilesConfigurer,org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2016-05-17 16:15:44 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/cboard/list],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.csy.web.cboard.CBoardController.list()
+2016-05-17 16:15:44 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.csy.web.global.GlobalController.list(java.util.Locale,org.springframework.ui.Model)
+2016-05-17 16:15:44 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/student/main],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.csy.web.student.StudentController.main()
+2016-05-17 16:15:44 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/student/list],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.csy.web.student.StudentController.list()
+2016-05-17 16:15:44 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/student/cboard],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.csy.web.student.StudentController.cboard()
+2016-05-17 16:15:44 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/student/calendar],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.csy.web.student.StudentController.calendar()
+2016-05-17 16:15:44 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/student/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.csy.web.student.StudentController.login()
+2016-05-17 16:15:44 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/student/login],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.csy.web.student.StudentDTO com.csy.web.student.StudentController.login(com.csy.web.student.StudentDTO)
+2016-05-17 16:15:44 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/student/logout],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.csy.web.student.StudentController.logout(org.springframework.web.bind.support.SessionStatus)
+2016-05-17 16:15:44 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/student/graph],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.csy.web.student.StudentController.graph()
+2016-05-17 16:15:44 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/student/newitem],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.csy.web.student.StudentController.newitem()
+2016-05-17 16:15:44 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/student/signup],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.csy.web.student.StudentController.signup()
+2016-05-17 16:15:44 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/student/signup],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.csy.web.student.StudentDTO com.csy.web.student.StudentController.signup(com.csy.web.student.StudentDTO)
+2016-05-17 16:15:44 [main] INFO  SimpleUrlHandlerMapping:315 - Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2016-05-17 16:15:44 [main] INFO  TilesAccess:93 - Publishing TilesContext for context: org.springframework.web.servlet.view.tiles3.SpringWildcardServletTilesApplicationContext
+2016-05-17 16:15:48 [main] INFO  connection:524 - 1. Connection opened
+2016-05-17 16:15:48 [main] INFO  audit:171 - 1. Connection.new Connection returned 
+2016-05-17 16:15:48 [main] INFO  audit:171 - 1. Connection.getAutoCommit() returned true
+2016-05-17 16:15:49 [main] INFO  audit:171 - 1. PreparedStatement.new PreparedStatement returned 
+2016-05-17 16:15:49 [main] INFO  audit:171 - 1. Connection.prepareStatement(SELECT count(*) FROM cboard
+       where c_use_yn = 'y';) returned net.sf.log4jdbc.PreparedStatementSpy@295eaa7c
+2016-05-17 16:15:49 [main] INFO  sqlonly:74 - SQL         :  SELECT count(*) FROM cboard
+      
+ where c_use_yn = 'y';
+2016-05-17 16:15:49 [main] INFO  sqltiming:357 - SELECT count(*) FROM cboard where c_use_yn = 'y';  {executed in 586 msec}
+2016-05-17 16:15:49 [main] INFO  audit:171 - 1. PreparedStatement.execute() returned true
+2016-05-17 16:15:49 [main] INFO  resultset:171 - 1. ResultSet.new ResultSet returned 
+2016-05-17 16:15:49 [main] INFO  audit:171 - 1. PreparedStatement.getResultSet() returned net.sf.log4jdbc.ResultSetSpy@1dd0e7c4
+2016-05-17 16:15:49 [main] INFO  resultset:171 - 1. ResultSet.getMetaData() returned com.mysql.jdbc.ResultSetMetaData@6111ba37 - Field level information: 
+	com.mysql.jdbc.Field@7be58f16[catalog=,tableName=,originalTableName=,columnName=count(*),originalColumnName=,mysqlType=8(FIELD_TYPE_LONGLONG),flags= BINARY, charsetIndex=63, charsetName=US-ASCII]
+2016-05-17 16:15:49 [main] INFO  resultset:171 - 1. ResultSet.getType() returned 1003
+2016-05-17 16:15:49 [main] INFO  resultset:171 - 1. ResultSet.next() returned true
+2016-05-17 16:15:49 [main] INFO  resultset:171 - 1. ResultSet.getInt(count(*)) returned 14
+2016-05-17 16:15:49 [main] INFO  resultset:171 - 1. ResultSet.wasNull() returned false
+2016-05-17 16:15:49 [main] INFO  resultsettable:108 - |---------|
+2016-05-17 16:15:49 [main] INFO  resultsettable:108 - |count(*) |
+2016-05-17 16:15:49 [main] INFO  resultsettable:108 - |---------|
+2016-05-17 16:15:49 [main] INFO  resultsettable:108 - |14       |
+2016-05-17 16:15:49 [main] INFO  resultsettable:108 - |---------|
+2016-05-17 16:15:49 [main] INFO  resultset:171 - 1. ResultSet.next() returned false
+2016-05-17 16:15:49 [main] INFO  resultset:171 - 1. ResultSet.close() returned null
+2016-05-17 16:15:49 [main] INFO  audit:171 - 1. PreparedStatement.getConnection() returned net.sf.log4jdbc.ConnectionSpy@4bff1903
+2016-05-17 16:15:49 [main] INFO  audit:171 - 1. Connection.getMetaData() returned org.apache.commons.dbcp.DelegatingDatabaseMetaData@62dae540
+2016-05-17 16:15:49 [main] INFO  audit:171 - 1. PreparedStatement.getMoreResults() returned false
+2016-05-17 16:15:49 [main] INFO  audit:171 - 1. PreparedStatement.getUpdateCount() returned -1
+2016-05-17 16:15:49 [main] INFO  audit:171 - 1. PreparedStatement.close() returned 
+2016-05-17 16:15:49 [main] INFO  connection:543 - 1. Connection closed
+2016-05-17 16:15:49 [main] INFO  audit:171 - 1. Connection.close() returned 
+2016-05-17 16:15:49 [main] INFO  connection:524 - 2. Connection opened
+2016-05-17 16:15:49 [main] INFO  audit:171 - 2. Connection.new Connection returned 
+2016-05-17 16:15:49 [main] INFO  audit:171 - 2. Connection.getAutoCommit() returned true
+2016-05-17 16:15:49 [main] INFO  audit:171 - 2. PreparedStatement.new PreparedStatement returned 
+2016-05-17 16:15:49 [main] INFO  audit:171 - 2. Connection.prepareStatement(UPDATE cboard 
+   SET 
+	   c_title = ?,
+	   c_des = ?,
+	   c_file_src1 = ?,
+	   c_file_src2 = ?
+   WHERE   
+   	   c_seq = ?;) returned net.sf.log4jdbc.PreparedStatementSpy@24d4d7c9
+2016-05-17 16:15:49 [main] INFO  audit:171 - 2. PreparedStatement.setString(1, "테스트변경") returned 
+2016-05-17 16:15:49 [main] INFO  audit:171 - 2. PreparedStatement.setString(2, "내용변경") returned 
+2016-05-17 16:15:49 [main] INFO  audit:171 - 2. PreparedStatement.setString(3, "test99.txt") returned 
+2016-05-17 16:15:49 [main] INFO  audit:171 - 2. PreparedStatement.setString(4, "test88.txt") returned 
+2016-05-17 16:15:49 [main] INFO  audit:171 - 2. PreparedStatement.setInt(5, 3) returned 
+2016-05-17 16:15:49 [main] INFO  sqlonly:74 - SQL         :  UPDATE cboard 
+   SET 
+	   c_title = '테스트변경',
+	   c_des = '내용변경',
+	   c_file_src1 = 'test99.txt',
+	   c_file_src2 = 'test88.txt'
+   WHERE   
+   	   c_seq = 3;
+2016-05-17 16:15:50 [main] INFO  sqltiming:357 - UPDATE cboard SET c_title = '테스트변경', c_des = '내용변경', c_file_src1 = 'test99.txt', c_file_src2 
+= 'test88.txt' WHERE c_seq = 3;  {executed in 432 msec}
+2016-05-17 16:15:50 [main] INFO  audit:171 - 2. PreparedStatement.execute() returned false
+2016-05-17 16:15:50 [main] INFO  audit:171 - 2. PreparedStatement.getUpdateCount() returned 1
+2016-05-17 16:15:50 [main] INFO  audit:171 - 2. PreparedStatement.close() returned 
+2016-05-17 16:15:50 [main] INFO  connection:543 - 2. Connection closed
+2016-05-17 16:15:50 [main] INFO  audit:171 - 2. Connection.close() returned 
+2016-05-17 16:15:50 [main] INFO  connection:524 - 3. Connection opened
+2016-05-17 16:15:50 [main] INFO  audit:171 - 3. Connection.new Connection returned 
+2016-05-17 16:15:50 [main] INFO  audit:171 - 3. Connection.getAutoCommit() returned true
+2016-05-17 16:15:50 [main] INFO  audit:171 - 3. PreparedStatement.new PreparedStatement returned 
+2016-05-17 16:15:50 [main] INFO  audit:171 - 3. Connection.prepareStatement(SELECT a.c_title as title
+		,a.c_des as des
+		,b.s_name as name
+		,lpad(a.c_reg_Date,10,0) as regDate
+		,a.c_file_src1 as fileSrc1
+		FROM cboard a , student b
+		where a.c_reg_user_id = b.s_id
+		AND c_use_yn = 'y'
+		order by a.c_reg_Date desc;) returned net.sf.log4jdbc.PreparedStatementSpy@150ab4ed
+2016-05-17 16:15:50 [main] INFO  sqlonly:74 - SQL         :  SELECT a.c_title as title
+		,a.c_des as des
+		,b.s_name as name
+		,lpad(a.c_reg_Date,10,0) as regDate
+		,a.c_file_src1 as fileSrc1
+		FROM cboard a , student b
+		where a.c_reg_user_id = b.s_id
+		AND c_use_yn = 'y'
+		order by a.c_reg_Date desc;
+2016-05-17 16:15:50 [main] INFO  sqltiming:357 - SELECT a.c_title as title ,a.c_des as des ,b.s_name as name ,lpad(a.c_reg_Date,10,0) as regDate 
+,a.c_file_src1 as fileSrc1 FROM cboard a , student b where a.c_reg_user_id = b.s_id AND c_use_yn 
+= 'y' order by a.c_reg_Date desc;  {executed in 219 msec}
+2016-05-17 16:15:50 [main] INFO  audit:171 - 3. PreparedStatement.execute() returned true
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 3. ResultSet.new ResultSet returned 
+2016-05-17 16:15:50 [main] INFO  audit:171 - 3. PreparedStatement.getResultSet() returned net.sf.log4jdbc.ResultSetSpy@3c435123
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 3. ResultSet.getMetaData() returned com.mysql.jdbc.ResultSetMetaData@50fe837a - Field level information: 
+	com.mysql.jdbc.Field@3a62c01e[catalog=ms,tableName=a,originalTableName=cboard,columnName=title,originalColumnName=c_title,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.jdbc.Field@7a8fa663[catalog=ms,tableName=a,originalTableName=cboard,columnName=des,originalColumnName=c_des,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.jdbc.Field@5ce33a58[catalog=ms,tableName=b,originalTableName=student,columnName=name,originalColumnName=s_name,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.jdbc.Field@78a287ed[catalog=,tableName=,originalTableName=,columnName=regDate,originalColumnName=regDate,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=8, charsetName=WINDOWS-1252]
+	com.mysql.jdbc.Field@546ccad7[catalog=ms,tableName=a,originalTableName=cboard,columnName=fileSrc1,originalColumnName=c_file_src1,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=33, charsetName=UTF-8]
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 3. ResultSet.getType() returned 1003
+2016-05-17 16:15:50 [main] INFO  resultsettable:108 - |--------|------|-------|--------|------------|
+2016-05-17 16:15:50 [main] INFO  resultsettable:108 - |c_title |c_des |s_name |regDate |c_file_src1 |
+2016-05-17 16:15:50 [main] INFO  resultsettable:108 - |--------|------|-------|--------|------------|
+2016-05-17 16:15:50 [main] INFO  resultsettable:108 - |--------|------|-------|--------|------------|
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 3. ResultSet.next() returned false
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 3. ResultSet.close() returned null
+2016-05-17 16:15:50 [main] INFO  audit:171 - 3. PreparedStatement.getConnection() returned net.sf.log4jdbc.ConnectionSpy@1623134f
+2016-05-17 16:15:50 [main] INFO  audit:171 - 3. Connection.getMetaData() returned org.apache.commons.dbcp.DelegatingDatabaseMetaData@7a527389
+2016-05-17 16:15:50 [main] INFO  audit:171 - 3. PreparedStatement.getMoreResults() returned false
+2016-05-17 16:15:50 [main] INFO  audit:171 - 3. PreparedStatement.getUpdateCount() returned -1
+2016-05-17 16:15:50 [main] INFO  audit:171 - 3. PreparedStatement.close() returned 
+2016-05-17 16:15:50 [main] INFO  connection:543 - 3. Connection closed
+2016-05-17 16:15:50 [main] INFO  audit:171 - 3. Connection.close() returned 
+2016-05-17 16:15:50 [main] INFO  connection:524 - 4. Connection opened
+2016-05-17 16:15:50 [main] INFO  audit:171 - 4. Connection.new Connection returned 
+2016-05-17 16:15:50 [main] INFO  audit:171 - 4. Connection.getAutoCommit() returned true
+2016-05-17 16:15:50 [main] INFO  audit:171 - 4. PreparedStatement.new PreparedStatement returned 
+2016-05-17 16:15:50 [main] INFO  audit:171 - 4. Connection.prepareStatement(update cboard
+       set c_use_yn = 'n' 
+       WHERE c_seq = ?;) returned net.sf.log4jdbc.PreparedStatementSpy@1bb1fde8
+2016-05-17 16:15:50 [main] INFO  audit:171 - 4. PreparedStatement.setInt(1, 2) returned 
+2016-05-17 16:15:50 [main] INFO  sqlonly:74 - SQL         :  update cboard
+       set c_use_yn = 'n' 
+       WHERE c_seq = 2;
+2016-05-17 16:15:50 [main] INFO  sqltiming:357 - update cboard set c_use_yn = 'n' WHERE c_seq = 2;  {executed in 165 msec}
+2016-05-17 16:15:50 [main] INFO  audit:171 - 4. PreparedStatement.execute() returned false
+2016-05-17 16:15:50 [main] INFO  audit:171 - 4. PreparedStatement.getUpdateCount() returned 1
+2016-05-17 16:15:50 [main] INFO  audit:171 - 4. PreparedStatement.close() returned 
+2016-05-17 16:15:50 [main] INFO  connection:543 - 4. Connection closed
+2016-05-17 16:15:50 [main] INFO  audit:171 - 4. Connection.close() returned 
+2016-05-17 16:15:50 [main] INFO  connection:524 - 5. Connection opened
+2016-05-17 16:15:50 [main] INFO  audit:171 - 5. Connection.new Connection returned 
+2016-05-17 16:15:50 [main] INFO  audit:171 - 5. Connection.getAutoCommit() returned true
+2016-05-17 16:15:50 [main] INFO  audit:171 - 5. PreparedStatement.new PreparedStatement returned 
+2016-05-17 16:15:50 [main] INFO  audit:171 - 5. Connection.prepareStatement(SELECT c_title as title
+		,c_des as des
+		,c_reg_user_name as name
+		,lpad(c_reg_Date,10,0) as regDate
+	FROM cboard
+	where c_reg_user_id
+	AND c_reg_user_id = ?
+	AND c_use_yn = 'y'
+	order by c_reg_Date desc;) returned net.sf.log4jdbc.PreparedStatementSpy@2453f95d
+2016-05-17 16:15:50 [main] INFO  audit:171 - 5. PreparedStatement.setString(1, "cho") returned 
+2016-05-17 16:15:50 [main] INFO  sqlonly:74 - SQL         :  SELECT c_title as title
+		,c_des as des
+		,c_reg_user_name as name
+		,lpad(c_reg_Date,10,0) as regDate
+	FROM cboard
+	where c_reg_user_id
+	AND c_reg_user_id = 'cho'
+	AND c_use_yn = 'y'
+	order by c_reg_Date desc;
+2016-05-17 16:15:50 [main] INFO  sqltiming:357 - SELECT c_title as title ,c_des as des ,c_reg_user_name as name ,lpad(c_reg_Date,10,0) as regDate 
+FROM cboard where c_reg_user_id AND c_reg_user_id = 'cho' AND c_use_yn = 'y' order by c_reg_Date 
+desc;  {executed in 180 msec}
+2016-05-17 16:15:50 [main] INFO  audit:171 - 5. PreparedStatement.execute() returned true
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 5. ResultSet.new ResultSet returned 
+2016-05-17 16:15:50 [main] INFO  audit:171 - 5. PreparedStatement.getResultSet() returned net.sf.log4jdbc.ResultSetSpy@44828f6b
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 5. ResultSet.getMetaData() returned com.mysql.jdbc.ResultSetMetaData@2dbe250d - Field level information: 
+	com.mysql.jdbc.Field@553f1d75[catalog=ms,tableName=cboard,originalTableName=cboard,columnName=title,originalColumnName=c_title,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.jdbc.Field@6e1d8f9e[catalog=ms,tableName=cboard,originalTableName=cboard,columnName=des,originalColumnName=c_des,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.jdbc.Field@3e34ace1[catalog=ms,tableName=cboard,originalTableName=cboard,columnName=name,originalColumnName=c_reg_user_name,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.jdbc.Field@62fe6067[catalog=,tableName=,originalTableName=,columnName=regDate,originalColumnName=,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=8, charsetName=WINDOWS-1252]
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 5. ResultSet.getType() returned 1003
+2016-05-17 16:15:50 [main] INFO  resultsettable:108 - |--------|------|----------------|--------|
+2016-05-17 16:15:50 [main] INFO  resultsettable:108 - |c_title |c_des |c_reg_user_name |regDate |
+2016-05-17 16:15:50 [main] INFO  resultsettable:108 - |--------|------|----------------|--------|
+2016-05-17 16:15:50 [main] INFO  resultsettable:108 - |--------|------|----------------|--------|
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 5. ResultSet.next() returned false
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 5. ResultSet.close() returned null
+2016-05-17 16:15:50 [main] INFO  audit:171 - 5. PreparedStatement.getConnection() returned net.sf.log4jdbc.ConnectionSpy@4de41af9
+2016-05-17 16:15:50 [main] INFO  audit:171 - 5. Connection.getMetaData() returned org.apache.commons.dbcp.DelegatingDatabaseMetaData@56ace400
+2016-05-17 16:15:50 [main] INFO  audit:171 - 5. PreparedStatement.getMoreResults() returned false
+2016-05-17 16:15:50 [main] INFO  audit:171 - 5. PreparedStatement.getUpdateCount() returned -1
+2016-05-17 16:15:50 [main] INFO  audit:171 - 5. PreparedStatement.close() returned 
+2016-05-17 16:15:50 [main] INFO  connection:543 - 5. Connection closed
+2016-05-17 16:15:50 [main] INFO  audit:171 - 5. Connection.close() returned 
+2016-05-17 16:15:50 [main] INFO  connection:524 - 6. Connection opened
+2016-05-17 16:15:50 [main] INFO  audit:171 - 6. Connection.new Connection returned 
+2016-05-17 16:15:50 [main] INFO  audit:171 - 6. Connection.getAutoCommit() returned true
+2016-05-17 16:15:50 [main] INFO  audit:171 - 6. PreparedStatement.new PreparedStatement returned 
+2016-05-17 16:15:50 [main] INFO  audit:171 - 6. Connection.prepareStatement(SELECT c_title as title
+		,c_des as des
+		,c_reg_user_name as name
+		,lpad(c_reg_Date,10,0) as regDate
+	FROM cboard
+	where c_reg_user_name = ?
+	AND c_use_yn = 'y'
+	order by c_reg_Date desc;) returned net.sf.log4jdbc.PreparedStatementSpy@6cbcf243
+2016-05-17 16:15:50 [main] INFO  audit:171 - 6. PreparedStatement.setString(1, "조조조") returned 
+2016-05-17 16:15:50 [main] INFO  sqlonly:74 - SQL         :  SELECT c_title as title
+		,c_des as des
+		,c_reg_user_name as name
+		,lpad(c_reg_Date,10,0) as regDate
+	FROM cboard
+	where c_reg_user_name = '조조조'
+	AND c_use_yn = 'y'
+	order by c_reg_Date desc;
+2016-05-17 16:15:50 [main] INFO  sqltiming:357 - SELECT c_title as title ,c_des as des ,c_reg_user_name as name ,lpad(c_reg_Date,10,0) as regDate 
+FROM cboard where c_reg_user_name = '조조조' AND c_use_yn = 'y' order by c_reg_Date desc;  {executed in 165 msec}
+2016-05-17 16:15:50 [main] INFO  audit:171 - 6. PreparedStatement.execute() returned true
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.new ResultSet returned 
+2016-05-17 16:15:50 [main] INFO  audit:171 - 6. PreparedStatement.getResultSet() returned net.sf.log4jdbc.ResultSetSpy@29e6eb25
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.getMetaData() returned com.mysql.jdbc.ResultSetMetaData@62435e70 - Field level information: 
+	com.mysql.jdbc.Field@339bf286[catalog=ms,tableName=cboard,originalTableName=cboard,columnName=title,originalColumnName=c_title,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.jdbc.Field@38be305c[catalog=ms,tableName=cboard,originalTableName=cboard,columnName=des,originalColumnName=c_des,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.jdbc.Field@269f4bad[catalog=ms,tableName=cboard,originalTableName=cboard,columnName=name,originalColumnName=c_reg_user_name,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.jdbc.Field@5ed731d0[catalog=,tableName=,originalTableName=,columnName=regDate,originalColumnName=,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=8, charsetName=WINDOWS-1252]
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.getType() returned 1003
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.next() returned true
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.getString(title) returned ???777
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.wasNull() returned false
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.getString(des) returned cboard??777
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.wasNull() returned false
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.getString(regDate) returned 2016-05-13
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.wasNull() returned false
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.next() returned true
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.getString(title) returned ???777
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.wasNull() returned false
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.getString(des) returned cboard??777
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.wasNull() returned false
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.getString(regDate) returned 2016-05-13
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.wasNull() returned false
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.next() returned true
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.getString(title) returned ???777
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.wasNull() returned false
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.getString(des) returned cboard??777
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.wasNull() returned false
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.getString(regDate) returned 2016-05-13
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.wasNull() returned false
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.next() returned true
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.getString(title) returned ???777
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.wasNull() returned false
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.getString(des) returned cboard??777
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.wasNull() returned false
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.getString(regDate) returned 2016-05-13
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.wasNull() returned false
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.next() returned true
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.getString(title) returned ???777
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.wasNull() returned false
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.getString(des) returned cboard??777
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.wasNull() returned false
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.getString(regDate) returned 2016-05-12
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.wasNull() returned false
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.next() returned true
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.getString(title) returned ???777
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.wasNull() returned false
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.getString(des) returned cboard??777
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.wasNull() returned false
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.getString(regDate) returned 2016-05-12
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.wasNull() returned false
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.next() returned true
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.getString(title) returned ???777
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.wasNull() returned false
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.getString(des) returned cboard??777
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.wasNull() returned false
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.getString(regDate) returned 2016-05-12
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.wasNull() returned false
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.next() returned true
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.getString(title) returned ???777
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.wasNull() returned false
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.getString(des) returned cboard??777
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.wasNull() returned false
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.getString(regDate) returned 2016-05-12
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.wasNull() returned false
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.next() returned true
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.getString(title) returned ???777
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.wasNull() returned false
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.getString(des) returned cboard??777
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.wasNull() returned false
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.getString(regDate) returned 2016-05-12
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.wasNull() returned false
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.next() returned true
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.getString(title) returned ???777
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.wasNull() returned false
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.getString(des) returned cboard??777
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.wasNull() returned false
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.getString(regDate) returned 2016-05-12
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.wasNull() returned false
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.next() returned true
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.getString(title) returned 타이틀테스트변경
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.wasNull() returned false
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.getString(des) returned 변경~
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.wasNull() returned false
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.getString(regDate) returned 2016-05-12
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.wasNull() returned false
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.next() returned true
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.getString(title) returned 타이틀테스트변경
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.wasNull() returned false
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.getString(des) returned 변경~
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.wasNull() returned false
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.getString(regDate) returned 2016-05-12
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.wasNull() returned false
+2016-05-17 16:15:50 [main] INFO  resultsettable:108 - |---------|------------|----------------|-----------|
+2016-05-17 16:15:50 [main] INFO  resultsettable:108 - |c_title  |c_des       |c_reg_user_name |regDate    |
+2016-05-17 16:15:50 [main] INFO  resultsettable:108 - |---------|------------|----------------|-----------|
+2016-05-17 16:15:50 [main] INFO  resultsettable:108 - |???777   |cboard??777 |[unread]        |2016-05-13 |
+2016-05-17 16:15:50 [main] INFO  resultsettable:108 - |???777   |cboard??777 |[unread]        |2016-05-13 |
+2016-05-17 16:15:50 [main] INFO  resultsettable:108 - |???777   |cboard??777 |[unread]        |2016-05-13 |
+2016-05-17 16:15:50 [main] INFO  resultsettable:108 - |???777   |cboard??777 |[unread]        |2016-05-13 |
+2016-05-17 16:15:50 [main] INFO  resultsettable:108 - |???777   |cboard??777 |[unread]        |2016-05-12 |
+2016-05-17 16:15:50 [main] INFO  resultsettable:108 - |???777   |cboard??777 |[unread]        |2016-05-12 |
+2016-05-17 16:15:50 [main] INFO  resultsettable:108 - |???777   |cboard??777 |[unread]        |2016-05-12 |
+2016-05-17 16:15:50 [main] INFO  resultsettable:108 - |???777   |cboard??777 |[unread]        |2016-05-12 |
+2016-05-17 16:15:50 [main] INFO  resultsettable:108 - |???777   |cboard??777 |[unread]        |2016-05-12 |
+2016-05-17 16:15:50 [main] INFO  resultsettable:108 - |???777   |cboard??777 |[unread]        |2016-05-12 |
+2016-05-17 16:15:50 [main] INFO  resultsettable:108 - |타이틀테스트변경 |변경~         |[unread]        |2016-05-12 |
+2016-05-17 16:15:50 [main] INFO  resultsettable:108 - |타이틀테스트변경 |변경~         |[unread]        |2016-05-12 |
+2016-05-17 16:15:50 [main] INFO  resultsettable:108 - |---------|------------|----------------|-----------|
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.next() returned false
+2016-05-17 16:15:50 [main] INFO  resultset:171 - 6. ResultSet.close() returned null
+2016-05-17 16:15:50 [main] INFO  audit:171 - 6. PreparedStatement.getConnection() returned net.sf.log4jdbc.ConnectionSpy@7bc10d84
+2016-05-17 16:15:50 [main] INFO  audit:171 - 6. Connection.getMetaData() returned org.apache.commons.dbcp.DelegatingDatabaseMetaData@275fe372
+2016-05-17 16:15:50 [main] INFO  audit:171 - 6. PreparedStatement.getMoreResults() returned false
+2016-05-17 16:15:50 [main] INFO  audit:171 - 6. PreparedStatement.getUpdateCount() returned -1
+2016-05-17 16:15:50 [main] INFO  audit:171 - 6. PreparedStatement.close() returned 
+2016-05-17 16:15:50 [main] INFO  connection:543 - 6. Connection closed
+2016-05-17 16:15:51 [main] INFO  audit:171 - 6. Connection.close() returned 
+2016-05-17 16:15:51 [main] INFO  connection:524 - 7. Connection opened
+2016-05-17 16:15:51 [main] INFO  audit:171 - 7. Connection.new Connection returned 
+2016-05-17 16:15:51 [main] INFO  audit:171 - 7. Connection.getAutoCommit() returned true
+2016-05-17 16:15:51 [main] INFO  audit:171 - 7. PreparedStatement.new PreparedStatement returned 
+2016-05-17 16:15:51 [main] INFO  audit:171 - 7. Connection.prepareStatement(INSERT INTO cboard(c_title,c_des,c_use_yn,c_reg_user_id,
+	c_reg_date,c_file_src1,c_file_src2,c_uid,c_reg_user_name)
+	values (?
+	,?
+	,'y'
+	,?
+	,now()
+	,?
+	,?
+	,date_format(now(),'%Y%m%d%H%i%s%f')
+	,?);) returned net.sf.log4jdbc.PreparedStatementSpy@26a4842b
+2016-05-17 16:15:51 [main] INFO  audit:171 - 7. PreparedStatement.setString(1, "테스트777") returned 
+2016-05-17 16:15:51 [main] INFO  audit:171 - 7. PreparedStatement.setString(2, "cboard내용777") returned 
+2016-05-17 16:15:51 [main] INFO  audit:171 - 7. PreparedStatement.setString(3, "cho") returned 
+2016-05-17 16:15:51 [main] INFO  audit:171 - 7. PreparedStatement.setString(4, "cboard777.txt") returned 
+2016-05-17 16:15:51 [main] INFO  audit:171 - 7. PreparedStatement.setString(5, "cboard777.txt") returned 
+2016-05-17 16:15:51 [main] INFO  audit:171 - 7. PreparedStatement.setString(6, "조조조") returned 
+2016-05-17 16:15:51 [main] INFO  sqlonly:74 - SQL         :  INSERT INTO cboard(c_title,c_des,c_use_yn,c_reg_user_id,
+	c_reg_date,c_file_src1,c_file_src2,c_uid,c_reg_user_name)
+	values ('테스트777'
+	,'cboard내용777'
+	,'y'
+	,'cho'
+	,now()
+	,'cboard777.txt'
+	,'cboard777.txt'
+	,date_format(now(),'%Y%m%d%H%i%s%f')
+	,'조조조');
+2016-05-17 16:15:51 [main] INFO  sqltiming:357 - INSERT INTO cboard(c_title,c_des,c_use_yn,c_reg_user_id, c_reg_date,c_file_src1,c_file_src2,c_uid,c_reg_user_name) 
+values ('테스트777' ,'cboard내용777' ,'y' ,'cho' ,now() ,'cboard777.txt' ,'cboard777.txt' ,date_format(now(),'%Y%m%d%H%i%s%f') 
+,'조조조');  {executed in 164 msec}
+2016-05-17 16:15:51 [main] INFO  audit:171 - 7. PreparedStatement.execute() returned false
+2016-05-17 16:15:51 [main] INFO  audit:171 - 7. PreparedStatement.getUpdateCount() returned 1
+2016-05-17 16:15:51 [main] INFO  audit:171 - 7. PreparedStatement.close() returned 
+2016-05-17 16:15:51 [main] INFO  connection:543 - 7. Connection closed
+2016-05-17 16:15:51 [main] INFO  audit:171 - 7. Connection.close() returned 
+2016-05-17 16:15:51 [Thread-1] INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@314c508a: startup date [Tue May 17 16:15:43 KST 2016]; root of context hierarchy
+2016-05-17 16:15:51 [Thread-1] INFO  DefaultListableBeanFactory:444 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@38102d01: defining beans [multipartResolver,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSourceSpied,dataSource,transactionManager,sqlSessionFactory,sqlSession,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#1,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,adminBean,adminServiceImpl,attendBean,attendServiceImpl,CBoardController,CBoardDTO,CBoardServiceImpl,globalController,studentController,studentDTO,studentServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,tilesConfigurer,org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2016-05-17 16:15:51 [Thread-1] INFO  TilesAccess:88 - Removing TilesContext for context: org.springframework.web.servlet.view.tiles3.SpringWildcardServletTilesApplicationContext
+2016-05-17 16:15:51 [Thread-1] WARN  DisposableBeanAdapter:337 - Invocation of destroy method 'close' failed on bean with name 'sqlSession': java.lang.UnsupportedOperationException: Manual close is not allowed over a Spring managed SqlSession
+2016-05-17 16:17:34 [main] INFO  XmlBeanDefinitionReader:315 - Loading XML bean definitions from file [C:\Users\CSY\Documents\ManagementStudent\httpsgithub.comniegel0128ManagementStudent.git\homepage\target\classes\META-INF\file-context.xml]
+2016-05-17 16:17:34 [main] INFO  XmlBeanDefinitionReader:315 - Loading XML bean definitions from file [C:\Users\CSY\Documents\ManagementStudent\httpsgithub.comniegel0128ManagementStudent.git\homepage\target\classes\META-INF\handler-context.xml]
+2016-05-17 16:17:34 [main] INFO  XmlBeanDefinitionReader:315 - Loading XML bean definitions from file [C:\Users\CSY\Documents\ManagementStudent\httpsgithub.comniegel0128ManagementStudent.git\homepage\target\classes\META-INF\mybatis-context.xml]
+2016-05-17 16:17:34 [main] INFO  XmlBeanDefinitionReader:315 - Loading XML bean definitions from file [C:\Users\CSY\Documents\ManagementStudent\httpsgithub.comniegel0128ManagementStudent.git\homepage\target\classes\META-INF\servlet-context.xml]
+2016-05-17 16:17:34 [main] INFO  XmlBeanDefinitionReader:315 - Loading XML bean definitions from file [C:\Users\CSY\Documents\ManagementStudent\httpsgithub.comniegel0128ManagementStudent.git\homepage\target\classes\META-INF\tiles-context.xml]
+2016-05-17 16:17:34 [main] INFO  XmlBeanDefinitionReader:315 - Loading XML bean definitions from file [C:\Users\CSY\Documents\ManagementStudent\httpsgithub.comniegel0128ManagementStudent.git\homepage\target\classes\META-INF\view-context.xml]
+2016-05-17 16:17:35 [main] INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@314c508a: startup date [Tue May 17 16:17:34 KST 2016]; root of context hierarchy
+2016-05-17 16:17:35 [main] INFO  PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [config/mysql.properties]
+2016-05-17 16:17:35 [main] INFO  PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [config/mysql.properties]
+2016-05-17 16:17:35 [main] INFO  AutowiredAnnotationBeanPostProcessor:141 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-05-17 16:17:35 [main] INFO  DefaultListableBeanFactory:598 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@38102d01: defining beans [multipartResolver,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSourceSpied,dataSource,transactionManager,sqlSessionFactory,sqlSession,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#1,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,adminBean,adminServiceImpl,attendBean,attendServiceImpl,CBoardController,CBoardDTO,CBoardServiceImpl,globalController,studentController,studentDTO,studentServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,tilesConfigurer,org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2016-05-17 16:17:35 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/cboard/list],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.csy.web.cboard.CBoardController.list()
+2016-05-17 16:17:35 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.csy.web.global.GlobalController.list(java.util.Locale,org.springframework.ui.Model)
+2016-05-17 16:17:35 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/student/main],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.csy.web.student.StudentController.main()
+2016-05-17 16:17:35 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/student/list],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.csy.web.student.StudentController.list()
+2016-05-17 16:17:35 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/student/cboard],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.csy.web.student.StudentController.cboard()
+2016-05-17 16:17:35 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/student/calendar],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.csy.web.student.StudentController.calendar()
+2016-05-17 16:17:35 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/student/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.csy.web.student.StudentController.login()
+2016-05-17 16:17:35 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/student/login],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.csy.web.student.StudentDTO com.csy.web.student.StudentController.login(com.csy.web.student.StudentDTO)
+2016-05-17 16:17:35 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/student/logout],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.csy.web.student.StudentController.logout(org.springframework.web.bind.support.SessionStatus)
+2016-05-17 16:17:35 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/student/graph],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.csy.web.student.StudentController.graph()
+2016-05-17 16:17:35 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/student/newitem],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.csy.web.student.StudentController.newitem()
+2016-05-17 16:17:35 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/student/signup],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.csy.web.student.StudentController.signup()
+2016-05-17 16:17:35 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/student/signup],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.csy.web.student.StudentDTO com.csy.web.student.StudentController.signup(com.csy.web.student.StudentDTO)
+2016-05-17 16:17:36 [main] INFO  SimpleUrlHandlerMapping:315 - Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2016-05-17 16:17:36 [main] INFO  TilesAccess:93 - Publishing TilesContext for context: org.springframework.web.servlet.view.tiles3.SpringWildcardServletTilesApplicationContext
+2016-05-17 16:17:42 [main] INFO  connection:524 - 1. Connection opened
+2016-05-17 16:17:42 [main] INFO  audit:171 - 1. Connection.new Connection returned 
+2016-05-17 16:17:42 [main] INFO  audit:171 - 1. Connection.getAutoCommit() returned true
+2016-05-17 16:17:42 [main] INFO  audit:171 - 1. PreparedStatement.new PreparedStatement returned 
+2016-05-17 16:17:42 [main] INFO  audit:171 - 1. Connection.prepareStatement(SELECT count(*) FROM cboard
+       where c_use_yn = 'y';) returned net.sf.log4jdbc.PreparedStatementSpy@295eaa7c
+2016-05-17 16:17:42 [main] INFO  sqlonly:74 - SQL         :  SELECT count(*) FROM cboard
+      
+ where c_use_yn = 'y';
+2016-05-17 16:17:42 [main] INFO  sqltiming:357 - SELECT count(*) FROM cboard where c_use_yn = 'y';  {executed in 208 msec}
+2016-05-17 16:17:42 [main] INFO  audit:171 - 1. PreparedStatement.execute() returned true
+2016-05-17 16:17:42 [main] INFO  resultset:171 - 1. ResultSet.new ResultSet returned 
+2016-05-17 16:17:42 [main] INFO  audit:171 - 1. PreparedStatement.getResultSet() returned net.sf.log4jdbc.ResultSetSpy@1dd0e7c4
+2016-05-17 16:17:42 [main] INFO  resultset:171 - 1. ResultSet.getMetaData() returned com.mysql.jdbc.ResultSetMetaData@6111ba37 - Field level information: 
+	com.mysql.jdbc.Field@7be58f16[catalog=,tableName=,originalTableName=,columnName=count(*),originalColumnName=,mysqlType=8(FIELD_TYPE_LONGLONG),flags= BINARY, charsetIndex=63, charsetName=US-ASCII]
+2016-05-17 16:17:42 [main] INFO  resultset:171 - 1. ResultSet.getType() returned 1003
+2016-05-17 16:17:42 [main] INFO  resultset:171 - 1. ResultSet.next() returned true
+2016-05-17 16:17:42 [main] INFO  resultset:171 - 1. ResultSet.getInt(count(*)) returned 15
+2016-05-17 16:17:42 [main] INFO  resultset:171 - 1. ResultSet.wasNull() returned false
+2016-05-17 16:17:42 [main] INFO  resultsettable:108 - |---------|
+2016-05-17 16:17:42 [main] INFO  resultsettable:108 - |count(*) |
+2016-05-17 16:17:42 [main] INFO  resultsettable:108 - |---------|
+2016-05-17 16:17:42 [main] INFO  resultsettable:108 - |15       |
+2016-05-17 16:17:42 [main] INFO  resultsettable:108 - |---------|
+2016-05-17 16:17:42 [main] INFO  resultset:171 - 1. ResultSet.next() returned false
+2016-05-17 16:17:42 [main] INFO  resultset:171 - 1. ResultSet.close() returned null
+2016-05-17 16:17:42 [main] INFO  audit:171 - 1. PreparedStatement.getConnection() returned net.sf.log4jdbc.ConnectionSpy@4bff1903
+2016-05-17 16:17:42 [main] INFO  audit:171 - 1. Connection.getMetaData() returned org.apache.commons.dbcp.DelegatingDatabaseMetaData@62dae540
+2016-05-17 16:17:42 [main] INFO  audit:171 - 1. PreparedStatement.getMoreResults() returned false
+2016-05-17 16:17:42 [main] INFO  audit:171 - 1. PreparedStatement.getUpdateCount() returned -1
+2016-05-17 16:17:42 [main] INFO  audit:171 - 1. PreparedStatement.close() returned 
+2016-05-17 16:17:42 [main] INFO  connection:543 - 1. Connection closed
+2016-05-17 16:17:42 [main] INFO  audit:171 - 1. Connection.close() returned 
+2016-05-17 16:17:42 [main] INFO  connection:524 - 2. Connection opened
+2016-05-17 16:17:42 [main] INFO  audit:171 - 2. Connection.new Connection returned 
+2016-05-17 16:17:42 [main] INFO  audit:171 - 2. Connection.getAutoCommit() returned true
+2016-05-17 16:17:42 [main] INFO  audit:171 - 2. PreparedStatement.new PreparedStatement returned 
+2016-05-17 16:17:42 [main] INFO  audit:171 - 2. Connection.prepareStatement(INSERT INTO cboard(c_title,c_des,c_use_yn,c_reg_user_id,
+	c_reg_date,c_file_src1,c_file_src2,c_uid,c_reg_user_name)
+	values (?
+	,?
+	,'y'
+	,?
+	,now()
+	,?
+	,?
+	,date_format(now(),'%Y%m%d%H%i%s%f')
+	,?);) returned net.sf.log4jdbc.PreparedStatementSpy@24d4d7c9
+2016-05-17 16:17:42 [main] INFO  audit:171 - 2. PreparedStatement.setString(1, "테스트777") returned 
+2016-05-17 16:17:42 [main] INFO  audit:171 - 2. PreparedStatement.setString(2, "cboard내용777") returned 
+2016-05-17 16:17:42 [main] INFO  audit:171 - 2. PreparedStatement.setString(3, "cho") returned 
+2016-05-17 16:17:42 [main] INFO  audit:171 - 2. PreparedStatement.setString(4, "cboard777.txt") returned 
+2016-05-17 16:17:42 [main] INFO  audit:171 - 2. PreparedStatement.setString(5, "cboard777.txt") returned 
+2016-05-17 16:17:42 [main] INFO  audit:171 - 2. PreparedStatement.setString(6, "조조조") returned 
+2016-05-17 16:17:42 [main] INFO  sqlonly:74 - SQL         :  INSERT INTO cboard(c_title,c_des,c_use_yn,c_reg_user_id,
+	c_reg_date,c_file_src1,c_file_src2,c_uid,c_reg_user_name)
+	values ('테스트777'
+	,'cboard내용777'
+	,'y'
+	,'cho'
+	,now()
+	,'cboard777.txt'
+	,'cboard777.txt'
+	,date_format(now(),'%Y%m%d%H%i%s%f')
+	,'조조조');
+2016-05-17 16:17:43 [main] INFO  sqltiming:357 - INSERT INTO cboard(c_title,c_des,c_use_yn,c_reg_user_id, c_reg_date,c_file_src1,c_file_src2,c_uid,c_reg_user_name) 
+values ('테스트777' ,'cboard내용777' ,'y' ,'cho' ,now() ,'cboard777.txt' ,'cboard777.txt' ,date_format(now(),'%Y%m%d%H%i%s%f') 
+,'조조조');  {executed in 223 msec}
+2016-05-17 16:17:43 [main] INFO  audit:171 - 2. PreparedStatement.execute() returned false
+2016-05-17 16:17:43 [main] INFO  audit:171 - 2. PreparedStatement.getUpdateCount() returned 1
+2016-05-17 16:17:43 [main] INFO  audit:171 - 2. PreparedStatement.close() returned 
+2016-05-17 16:17:43 [main] INFO  connection:543 - 2. Connection closed
+2016-05-17 16:17:43 [main] INFO  audit:171 - 2. Connection.close() returned 
+2016-05-17 16:17:43 [main] INFO  connection:524 - 3. Connection opened
+2016-05-17 16:17:43 [main] INFO  audit:171 - 3. Connection.new Connection returned 
+2016-05-17 16:17:43 [main] INFO  audit:171 - 3. Connection.getAutoCommit() returned true
+2016-05-17 16:17:43 [main] INFO  audit:171 - 3. PreparedStatement.new PreparedStatement returned 
+2016-05-17 16:17:43 [main] INFO  audit:171 - 3. Connection.prepareStatement(SELECT c_title as title
+		,c_des as des
+		,lpad(c_reg_Date,10,0) as regDate
+		,c_file_src1 as fileSrc1
+		FROM cboard 
+		where c_use_yn = 'y'
+		order by c_reg_Date desc;) returned net.sf.log4jdbc.PreparedStatementSpy@150ab4ed
+2016-05-17 16:17:43 [main] INFO  sqlonly:74 - SQL         :  SELECT c_title as title
+		,c_des as des
+		,lpad(c_reg_Date,10,0) as regDate
+		,c_file_src1 as fileSrc1
+		FROM cboard 
+		where c_use_yn = 'y'
+		order by c_reg_Date desc;
+2016-05-17 16:17:43 [main] INFO  sqltiming:357 - SELECT c_title as title ,c_des as des ,lpad(c_reg_Date,10,0) as regDate ,c_file_src1 as fileSrc1 
+FROM cboard where c_use_yn = 'y' order by c_reg_Date desc;  {executed in 209 msec}
+2016-05-17 16:17:43 [main] INFO  audit:171 - 3. PreparedStatement.execute() returned true
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.new ResultSet returned 
+2016-05-17 16:17:43 [main] INFO  audit:171 - 3. PreparedStatement.getResultSet() returned net.sf.log4jdbc.ResultSetSpy@3c435123
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getMetaData() returned com.mysql.jdbc.ResultSetMetaData@50fe837a - Field level information: 
+	com.mysql.jdbc.Field@3a62c01e[catalog=ms,tableName=cboard,originalTableName=cboard,columnName=title,originalColumnName=c_title,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.jdbc.Field@7a8fa663[catalog=ms,tableName=cboard,originalTableName=cboard,columnName=des,originalColumnName=c_des,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.jdbc.Field@5ce33a58[catalog=,tableName=,originalTableName=,columnName=regDate,originalColumnName=,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=8, charsetName=WINDOWS-1252]
+	com.mysql.jdbc.Field@78a287ed[catalog=ms,tableName=cboard,originalTableName=cboard,columnName=fileSrc1,originalColumnName=c_file_src1,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=33, charsetName=UTF-8]
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getType() returned 1003
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.next() returned true
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(title) returned ???777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(des) returned cboard??777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(regDate) returned 2016-05-17
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(fileSrc1) returned cboard777.txt
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.next() returned true
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(title) returned ???777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(des) returned cboard??777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(regDate) returned 2016-05-17
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(fileSrc1) returned cboard777.txt
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.next() returned true
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(title) returned ???777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(des) returned cboard??777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(regDate) returned 2016-05-13
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(fileSrc1) returned cboard777.txt
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.next() returned true
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(title) returned ???777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(des) returned cboard??777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(regDate) returned 2016-05-13
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(fileSrc1) returned cboard777.txt
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.next() returned true
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(title) returned ???777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(des) returned cboard??777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(regDate) returned 2016-05-13
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(fileSrc1) returned cboard777.txt
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.next() returned true
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(title) returned ???777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(des) returned cboard??777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(regDate) returned 2016-05-13
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(fileSrc1) returned cboard777.txt
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.next() returned true
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(title) returned ???777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(des) returned cboard??777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(regDate) returned 2016-05-12
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(fileSrc1) returned cboard777.txt
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.next() returned true
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(title) returned ???777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(des) returned cboard??777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(regDate) returned 2016-05-12
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(fileSrc1) returned cboard777.txt
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.next() returned true
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(title) returned ???777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(des) returned cboard??777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(regDate) returned 2016-05-12
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(fileSrc1) returned cboard777.txt
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.next() returned true
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(title) returned ???777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(des) returned cboard??777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(regDate) returned 2016-05-12
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(fileSrc1) returned cboard777.txt
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.next() returned true
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(title) returned ???777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(des) returned cboard??777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(regDate) returned 2016-05-12
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(fileSrc1) returned cboard777.txt
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.next() returned true
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(title) returned ???777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(des) returned cboard??777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(regDate) returned 2016-05-12
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(fileSrc1) returned cboard777.txt
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.next() returned true
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(title) returned 타이틀테스트변경
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(des) returned 변경~
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(regDate) returned 2016-05-12
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(fileSrc1) returned 파일변경1
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.next() returned true
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(title) returned 타이틀테스트변경
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(des) returned 변경~
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(regDate) returned 2016-05-12
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(fileSrc1) returned 파일변경1
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.next() returned true
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(title) returned 타이틀테스트변경
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(des) returned 변경~
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(regDate) returned 2016-05-12
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(fileSrc1) returned 파일변경1
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.next() returned true
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(title) returned ?????
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(des) returned ????
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(regDate) returned 2016-05-12
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.getString(fileSrc1) returned test99.txt
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultsettable:108 - |---------|------------|-----------|--------------|
+2016-05-17 16:17:43 [main] INFO  resultsettable:108 - |c_title  |c_des       |regDate    |c_file_src1   |
+2016-05-17 16:17:43 [main] INFO  resultsettable:108 - |---------|------------|-----------|--------------|
+2016-05-17 16:17:43 [main] INFO  resultsettable:108 - |???777   |cboard??777 |2016-05-17 |cboard777.txt |
+2016-05-17 16:17:43 [main] INFO  resultsettable:108 - |???777   |cboard??777 |2016-05-17 |cboard777.txt |
+2016-05-17 16:17:43 [main] INFO  resultsettable:108 - |???777   |cboard??777 |2016-05-13 |cboard777.txt |
+2016-05-17 16:17:43 [main] INFO  resultsettable:108 - |???777   |cboard??777 |2016-05-13 |cboard777.txt |
+2016-05-17 16:17:43 [main] INFO  resultsettable:108 - |???777   |cboard??777 |2016-05-13 |cboard777.txt |
+2016-05-17 16:17:43 [main] INFO  resultsettable:108 - |???777   |cboard??777 |2016-05-13 |cboard777.txt |
+2016-05-17 16:17:43 [main] INFO  resultsettable:108 - |???777   |cboard??777 |2016-05-12 |cboard777.txt |
+2016-05-17 16:17:43 [main] INFO  resultsettable:108 - |???777   |cboard??777 |2016-05-12 |cboard777.txt |
+2016-05-17 16:17:43 [main] INFO  resultsettable:108 - |???777   |cboard??777 |2016-05-12 |cboard777.txt |
+2016-05-17 16:17:43 [main] INFO  resultsettable:108 - |???777   |cboard??777 |2016-05-12 |cboard777.txt |
+2016-05-17 16:17:43 [main] INFO  resultsettable:108 - |???777   |cboard??777 |2016-05-12 |cboard777.txt |
+2016-05-17 16:17:43 [main] INFO  resultsettable:108 - |???777   |cboard??777 |2016-05-12 |cboard777.txt |
+2016-05-17 16:17:43 [main] INFO  resultsettable:108 - |타이틀테스트변경 |변경~         |2016-05-12 |파일변경1         |
+2016-05-17 16:17:43 [main] INFO  resultsettable:108 - |타이틀테스트변경 |변경~         |2016-05-12 |파일변경1         |
+2016-05-17 16:17:43 [main] INFO  resultsettable:108 - |타이틀테스트변경 |변경~         |2016-05-12 |파일변경1         |
+2016-05-17 16:17:43 [main] INFO  resultsettable:108 - |?????    |????        |2016-05-12 |test99.txt    |
+2016-05-17 16:17:43 [main] INFO  resultsettable:108 - |---------|------------|-----------|--------------|
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.next() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 3. ResultSet.close() returned null
+2016-05-17 16:17:43 [main] INFO  audit:171 - 3. PreparedStatement.getConnection() returned net.sf.log4jdbc.ConnectionSpy@2b43529a
+2016-05-17 16:17:43 [main] INFO  audit:171 - 3. Connection.getMetaData() returned org.apache.commons.dbcp.DelegatingDatabaseMetaData@4264b240
+2016-05-17 16:17:43 [main] INFO  audit:171 - 3. PreparedStatement.getMoreResults() returned false
+2016-05-17 16:17:43 [main] INFO  audit:171 - 3. PreparedStatement.getUpdateCount() returned -1
+2016-05-17 16:17:43 [main] INFO  audit:171 - 3. PreparedStatement.close() returned 
+2016-05-17 16:17:43 [main] INFO  connection:543 - 3. Connection closed
+2016-05-17 16:17:43 [main] INFO  audit:171 - 3. Connection.close() returned 
+2016-05-17 16:17:43 [main] INFO  connection:524 - 4. Connection opened
+2016-05-17 16:17:43 [main] INFO  audit:171 - 4. Connection.new Connection returned 
+2016-05-17 16:17:43 [main] INFO  audit:171 - 4. Connection.getAutoCommit() returned true
+2016-05-17 16:17:43 [main] INFO  audit:171 - 4. PreparedStatement.new PreparedStatement returned 
+2016-05-17 16:17:43 [main] INFO  audit:171 - 4. Connection.prepareStatement(SELECT c_title as title
+		,c_des as des
+		,c_reg_user_name as name
+		,lpad(c_reg_Date,10,0) as regDate
+	FROM cboard
+	where c_reg_user_name = ?
+	AND c_use_yn = 'y'
+	order by c_reg_Date desc;) returned net.sf.log4jdbc.PreparedStatementSpy@6bb75258
+2016-05-17 16:17:43 [main] INFO  audit:171 - 4. PreparedStatement.setString(1, "조조조") returned 
+2016-05-17 16:17:43 [main] INFO  sqlonly:74 - SQL         :  SELECT c_title as title
+		,c_des as des
+		,c_reg_user_name as name
+		,lpad(c_reg_Date,10,0) as regDate
+	FROM cboard
+	where c_reg_user_name = '조조조'
+	AND c_use_yn = 'y'
+	order by c_reg_Date desc;
+2016-05-17 16:17:43 [main] INFO  sqltiming:357 - SELECT c_title as title ,c_des as des ,c_reg_user_name as name ,lpad(c_reg_Date,10,0) as regDate 
+FROM cboard where c_reg_user_name = '조조조' AND c_use_yn = 'y' order by c_reg_Date desc;  {executed in 222 msec}
+2016-05-17 16:17:43 [main] INFO  audit:171 - 4. PreparedStatement.execute() returned true
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.new ResultSet returned 
+2016-05-17 16:17:43 [main] INFO  audit:171 - 4. PreparedStatement.getResultSet() returned net.sf.log4jdbc.ResultSetSpy@c260bdc
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.getMetaData() returned com.mysql.jdbc.ResultSetMetaData@75e01201 - Field level information: 
+	com.mysql.jdbc.Field@2783717b[catalog=ms,tableName=cboard,originalTableName=cboard,columnName=title,originalColumnName=c_title,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.jdbc.Field@76f7d241[catalog=ms,tableName=cboard,originalTableName=cboard,columnName=des,originalColumnName=c_des,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.jdbc.Field@4a335fa8[catalog=ms,tableName=cboard,originalTableName=cboard,columnName=name,originalColumnName=c_reg_user_name,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.jdbc.Field@3f363cf5[catalog=,tableName=,originalTableName=,columnName=regDate,originalColumnName=,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=8, charsetName=WINDOWS-1252]
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.getType() returned 1003
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.next() returned true
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.getString(title) returned ???777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.getString(des) returned cboard??777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.getString(regDate) returned 2016-05-17
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.next() returned true
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.getString(title) returned ???777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.getString(des) returned cboard??777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.getString(regDate) returned 2016-05-17
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.next() returned true
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.getString(title) returned ???777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.getString(des) returned cboard??777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.getString(regDate) returned 2016-05-13
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.next() returned true
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.getString(title) returned ???777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.getString(des) returned cboard??777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.getString(regDate) returned 2016-05-13
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.next() returned true
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.getString(title) returned ???777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.getString(des) returned cboard??777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.getString(regDate) returned 2016-05-13
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.next() returned true
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.getString(title) returned ???777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.getString(des) returned cboard??777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.getString(regDate) returned 2016-05-13
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.next() returned true
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.getString(title) returned ???777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.getString(des) returned cboard??777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.getString(regDate) returned 2016-05-12
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.next() returned true
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.getString(title) returned ???777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.getString(des) returned cboard??777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.getString(regDate) returned 2016-05-12
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.next() returned true
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.getString(title) returned ???777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.getString(des) returned cboard??777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.getString(regDate) returned 2016-05-12
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.next() returned true
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.getString(title) returned ???777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.getString(des) returned cboard??777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.getString(regDate) returned 2016-05-12
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.next() returned true
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.getString(title) returned ???777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.getString(des) returned cboard??777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.getString(regDate) returned 2016-05-12
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.next() returned true
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.getString(title) returned ???777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.getString(des) returned cboard??777
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.getString(regDate) returned 2016-05-12
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.next() returned true
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.getString(title) returned 타이틀테스트변경
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.getString(des) returned 변경~
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.getString(regDate) returned 2016-05-12
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.next() returned true
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.getString(title) returned 타이틀테스트변경
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.getString(des) returned 변경~
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.getString(regDate) returned 2016-05-12
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.wasNull() returned false
+2016-05-17 16:17:43 [main] INFO  resultsettable:108 - |---------|------------|----------------|-----------|
+2016-05-17 16:17:43 [main] INFO  resultsettable:108 - |c_title  |c_des       |c_reg_user_name |regDate    |
+2016-05-17 16:17:43 [main] INFO  resultsettable:108 - |---------|------------|----------------|-----------|
+2016-05-17 16:17:43 [main] INFO  resultsettable:108 - |???777   |cboard??777 |[unread]        |2016-05-17 |
+2016-05-17 16:17:43 [main] INFO  resultsettable:108 - |???777   |cboard??777 |[unread]        |2016-05-17 |
+2016-05-17 16:17:43 [main] INFO  resultsettable:108 - |???777   |cboard??777 |[unread]        |2016-05-13 |
+2016-05-17 16:17:43 [main] INFO  resultsettable:108 - |???777   |cboard??777 |[unread]        |2016-05-13 |
+2016-05-17 16:17:43 [main] INFO  resultsettable:108 - |???777   |cboard??777 |[unread]        |2016-05-13 |
+2016-05-17 16:17:43 [main] INFO  resultsettable:108 - |???777   |cboard??777 |[unread]        |2016-05-13 |
+2016-05-17 16:17:43 [main] INFO  resultsettable:108 - |???777   |cboard??777 |[unread]        |2016-05-12 |
+2016-05-17 16:17:43 [main] INFO  resultsettable:108 - |???777   |cboard??777 |[unread]        |2016-05-12 |
+2016-05-17 16:17:43 [main] INFO  resultsettable:108 - |???777   |cboard??777 |[unread]        |2016-05-12 |
+2016-05-17 16:17:43 [main] INFO  resultsettable:108 - |???777   |cboard??777 |[unread]        |2016-05-12 |
+2016-05-17 16:17:43 [main] INFO  resultsettable:108 - |???777   |cboard??777 |[unread]        |2016-05-12 |
+2016-05-17 16:17:43 [main] INFO  resultsettable:108 - |???777   |cboard??777 |[unread]        |2016-05-12 |
+2016-05-17 16:17:43 [main] INFO  resultsettable:108 - |타이틀테스트변경 |변경~         |[unread]        |2016-05-12 |
+2016-05-17 16:17:43 [main] INFO  resultsettable:108 - |타이틀테스트변경 |변경~         |[unread]        |2016-05-12 |
+2016-05-17 16:17:43 [main] INFO  resultsettable:108 - |---------|------------|----------------|-----------|
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.next() returned false
+2016-05-17 16:17:43 [main] INFO  resultset:171 - 4. ResultSet.close() returned null
+2016-05-17 16:17:43 [main] INFO  audit:171 - 4. PreparedStatement.getConnection() returned net.sf.log4jdbc.ConnectionSpy@4baf352a
+2016-05-17 16:17:43 [main] INFO  audit:171 - 4. Connection.getMetaData() returned org.apache.commons.dbcp.DelegatingDatabaseMetaData@1bb1fde8
+2016-05-17 16:17:43 [main] INFO  audit:171 - 4. PreparedStatement.getMoreResults() returned false
+2016-05-17 16:17:43 [main] INFO  audit:171 - 4. PreparedStatement.getUpdateCount() returned -1
+2016-05-17 16:17:43 [main] INFO  audit:171 - 4. PreparedStatement.close() returned 
+2016-05-17 16:17:43 [main] INFO  connection:543 - 4. Connection closed
+2016-05-17 16:17:43 [main] INFO  audit:171 - 4. Connection.close() returned 
+2016-05-17 16:17:43 [main] INFO  connection:524 - 5. Connection opened
+2016-05-17 16:17:43 [main] INFO  audit:171 - 5. Connection.new Connection returned 
+2016-05-17 16:17:43 [main] INFO  audit:171 - 5. Connection.getAutoCommit() returned true
+2016-05-17 16:17:43 [main] INFO  audit:171 - 5. PreparedStatement.new PreparedStatement returned 
+2016-05-17 16:17:43 [main] INFO  audit:171 - 5. Connection.prepareStatement(SELECT c_title as title
+		,c_des as des
+		,c_reg_user_name as name
+		,lpad(c_reg_Date,10,0) as regDate
+	FROM cboard
+	where c_reg_user_id
+	AND c_reg_user_id = ?
+	AND c_use_yn = 'y'
+	order by c_reg_Date desc;) returned net.sf.log4jdbc.PreparedStatementSpy@30990c1b
+2016-05-17 16:17:43 [main] INFO  audit:171 - 5. PreparedStatement.setString(1, "cho") returned 
+2016-05-17 16:17:43 [main] INFO  sqlonly:74 - SQL         :  SELECT c_title as title
+		,c_des as des
+		,c_reg_user_name as name
+		,lpad(c_reg_Date,10,0) as regDate
+	FROM cboard
+	where c_reg_user_id
+	AND c_reg_user_id = 'cho'
+	AND c_use_yn = 'y'
+	order by c_reg_Date desc;
+2016-05-17 16:17:44 [main] INFO  sqltiming:357 - SELECT c_title as title ,c_des as des ,c_reg_user_name as name ,lpad(c_reg_Date,10,0) as regDate 
+FROM cboard where c_reg_user_id AND c_reg_user_id = 'cho' AND c_use_yn = 'y' order by c_reg_Date 
+desc;  {executed in 209 msec}
+2016-05-17 16:17:44 [main] INFO  audit:171 - 5. PreparedStatement.execute() returned true
+2016-05-17 16:17:44 [main] INFO  resultset:171 - 5. ResultSet.new ResultSet returned 
+2016-05-17 16:17:44 [main] INFO  audit:171 - 5. PreparedStatement.getResultSet() returned net.sf.log4jdbc.ResultSetSpy@2453f95d
+2016-05-17 16:17:44 [main] INFO  resultset:171 - 5. ResultSet.getMetaData() returned com.mysql.jdbc.ResultSetMetaData@44828f6b - Field level information: 
+	com.mysql.jdbc.Field@2dbe250d[catalog=ms,tableName=cboard,originalTableName=cboard,columnName=title,originalColumnName=c_title,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.jdbc.Field@553f1d75[catalog=ms,tableName=cboard,originalTableName=cboard,columnName=des,originalColumnName=c_des,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.jdbc.Field@6e1d8f9e[catalog=ms,tableName=cboard,originalTableName=cboard,columnName=name,originalColumnName=c_reg_user_name,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.jdbc.Field@3e34ace1[catalog=,tableName=,originalTableName=,columnName=regDate,originalColumnName=,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=8, charsetName=WINDOWS-1252]
+2016-05-17 16:17:44 [main] INFO  resultset:171 - 5. ResultSet.getType() returned 1003
+2016-05-17 16:17:44 [main] INFO  resultsettable:108 - |--------|------|----------------|--------|
+2016-05-17 16:17:44 [main] INFO  resultsettable:108 - |c_title |c_des |c_reg_user_name |regDate |
+2016-05-17 16:17:44 [main] INFO  resultsettable:108 - |--------|------|----------------|--------|
+2016-05-17 16:17:44 [main] INFO  resultsettable:108 - |--------|------|----------------|--------|
+2016-05-17 16:17:44 [main] INFO  resultset:171 - 5. ResultSet.next() returned false
+2016-05-17 16:17:44 [main] INFO  resultset:171 - 5. ResultSet.close() returned null
+2016-05-17 16:17:44 [main] INFO  audit:171 - 5. PreparedStatement.getConnection() returned net.sf.log4jdbc.ConnectionSpy@4f071df8
+2016-05-17 16:17:44 [main] INFO  audit:171 - 5. Connection.getMetaData() returned org.apache.commons.dbcp.DelegatingDatabaseMetaData@56ace400
+2016-05-17 16:17:44 [main] INFO  audit:171 - 5. PreparedStatement.getMoreResults() returned false
+2016-05-17 16:17:44 [main] INFO  audit:171 - 5. PreparedStatement.getUpdateCount() returned -1
+2016-05-17 16:17:44 [main] INFO  audit:171 - 5. PreparedStatement.close() returned 
+2016-05-17 16:17:44 [main] INFO  connection:543 - 5. Connection closed
+2016-05-17 16:17:44 [main] INFO  audit:171 - 5. Connection.close() returned 
+2016-05-17 16:17:44 [main] INFO  connection:524 - 6. Connection opened
+2016-05-17 16:17:44 [main] INFO  audit:171 - 6. Connection.new Connection returned 
+2016-05-17 16:17:44 [main] INFO  audit:171 - 6. Connection.getAutoCommit() returned true
+2016-05-17 16:17:44 [main] INFO  audit:171 - 6. PreparedStatement.new PreparedStatement returned 
+2016-05-17 16:17:44 [main] INFO  audit:171 - 6. Connection.prepareStatement(UPDATE cboard 
+   SET 
+	   c_title = ?,
+	   c_des = ?,
+	   c_file_src1 = ?,
+	   c_file_src2 = ?
+   WHERE   
+   	   c_seq = ?;) returned net.sf.log4jdbc.PreparedStatementSpy@5d018107
+2016-05-17 16:17:44 [main] INFO  audit:171 - 6. PreparedStatement.setString(1, "테스트변경") returned 
+2016-05-17 16:17:44 [main] INFO  audit:171 - 6. PreparedStatement.setString(2, "내용변경") returned 
+2016-05-17 16:17:44 [main] INFO  audit:171 - 6. PreparedStatement.setString(3, "test99.txt") returned 
+2016-05-17 16:17:44 [main] INFO  audit:171 - 6. PreparedStatement.setString(4, "test88.txt") returned 
+2016-05-17 16:17:44 [main] INFO  audit:171 - 6. PreparedStatement.setInt(5, 3) returned 
+2016-05-17 16:17:44 [main] INFO  sqlonly:74 - SQL         :  UPDATE cboard 
+   SET 
+	   c_title = '테스트변경',
+	   c_des = '내용변경',
+	   c_file_src1 = 'test99.txt',
+	   c_file_src2 = 'test88.txt'
+   WHERE   
+   	   c_seq = 3;
+2016-05-17 16:17:44 [main] INFO  sqltiming:357 - UPDATE cboard SET c_title = '테스트변경', c_des = '내용변경', c_file_src1 = 'test99.txt', c_file_src2 
+= 'test88.txt' WHERE c_seq = 3;  {executed in 216 msec}
+2016-05-17 16:17:44 [main] INFO  audit:171 - 6. PreparedStatement.execute() returned false
+2016-05-17 16:17:44 [main] INFO  audit:171 - 6. PreparedStatement.getUpdateCount() returned 1
+2016-05-17 16:17:44 [main] INFO  audit:171 - 6. PreparedStatement.close() returned 
+2016-05-17 16:17:44 [main] INFO  connection:543 - 6. Connection closed
+2016-05-17 16:17:44 [main] INFO  audit:171 - 6. Connection.close() returned 
+2016-05-17 16:17:44 [main] INFO  connection:524 - 7. Connection opened
+2016-05-17 16:17:44 [main] INFO  audit:171 - 7. Connection.new Connection returned 
+2016-05-17 16:17:44 [main] INFO  audit:171 - 7. Connection.getAutoCommit() returned true
+2016-05-17 16:17:44 [main] INFO  audit:171 - 7. PreparedStatement.new PreparedStatement returned 
+2016-05-17 16:17:44 [main] INFO  audit:171 - 7. Connection.prepareStatement(update cboard
+       set c_use_yn = 'n' 
+       WHERE c_seq = ?;) returned net.sf.log4jdbc.PreparedStatementSpy@339bf286
+2016-05-17 16:17:44 [main] INFO  audit:171 - 7. PreparedStatement.setInt(1, 2) returned 
+2016-05-17 16:17:44 [main] INFO  sqlonly:74 - SQL         :  update cboard
+       set c_use_yn = 'n' 
+       WHERE c_seq = 2;
+2016-05-17 16:17:44 [main] INFO  sqltiming:357 - update cboard set c_use_yn = 'n' WHERE c_seq = 2;  {executed in 220 msec}
+2016-05-17 16:17:44 [main] INFO  audit:171 - 7. PreparedStatement.execute() returned false
+2016-05-17 16:17:44 [main] INFO  audit:171 - 7. PreparedStatement.getUpdateCount() returned 1
+2016-05-17 16:17:44 [main] INFO  audit:171 - 7. PreparedStatement.close() returned 
+2016-05-17 16:17:44 [main] INFO  connection:543 - 7. Connection closed
+2016-05-17 16:17:44 [main] INFO  audit:171 - 7. Connection.close() returned 
+2016-05-17 16:17:44 [Thread-1] INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@314c508a: startup date [Tue May 17 16:17:34 KST 2016]; root of context hierarchy
+2016-05-17 16:17:44 [Thread-1] INFO  DefaultListableBeanFactory:444 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@38102d01: defining beans [multipartResolver,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSourceSpied,dataSource,transactionManager,sqlSessionFactory,sqlSession,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#1,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,adminBean,adminServiceImpl,attendBean,attendServiceImpl,CBoardController,CBoardDTO,CBoardServiceImpl,globalController,studentController,studentDTO,studentServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,tilesConfigurer,org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
