@@ -78,7 +78,7 @@ public class StudentController {
 		return "global/signup.stu";
 	}	
 	
-	@RequestMapping(value ="/signup",method=RequestMethod.POST )
+	/*@RequestMapping(value ="/signup",method=RequestMethod.POST )
 	public String signup(@RequestParam("id")String id,
 						@RequestParam("password")String password,
 						@RequestParam("name")String name,
@@ -110,6 +110,25 @@ public class StudentController {
 		}
 		
 		return view;
+	}*/
+	
+	@RequestMapping(value ="/signup",method=RequestMethod.POST )
+	public @ResponseBody StudentDTO signup(@RequestBody StudentDTO stu){
+		LOGGER.info("signup : POST");
+		student.setId(stu.getId());
+		student.setPassword(stu.getPassword());
+		student.setName(stu.getName());
+		student.setTel(stu.getTel());
+		student.setEmail(stu.getEmail());
+		student.setProfileImg(stu.getProfileImg());
+		LOGGER.info("회원가입 컨트롤러 파라미터 ID : {}",stu.getId());
+		LOGGER.info("회원가입 컨트롤러 파라미터 PW : {}",stu.getPassword());
+		LOGGER.info("회원가입 컨트롤러 파라미터 name : {}",stu.getName());
+		LOGGER.info("회원가입 컨트롤러 파라미터 tel : {}",stu.getTel());
+		LOGGER.info("회원가입 컨트롤러 파라미터 email : {}",stu.getEmail());
+		LOGGER.info("회원가입 컨트롤러 파라미터 profileImg : {}",stu.getProfileImg());
+		service.add(student);
+		return student;
 	}
 	
 	@RequestMapping("/logout")

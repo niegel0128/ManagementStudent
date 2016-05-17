@@ -57,12 +57,63 @@
 			
 		},
 		join : function(context) {
-			$('#signupButton').click(function(e) {
-				e.preventDefault();
+			$('#signupButton').click(function() {
 				alert('회원가입 버튼클릭!');
-				$('form').attr('action',context+'/student/signup')
-				.attr('method','get').submit();
+				$('#content').html(student.signup());
+				$('#reset').click(function(){
+					alert('리셋!');
 				});
+				$('#signup').click(function(){
+					alert('확인 버튼 클릭!')
+					var sign = {
+							id : $('#id').val(),	
+							password : $('#password').val(),	
+							name : $('#name').val(),
+							tel : $('#tel').val(),
+							email : $('#email').val(),	
+							profileImg : $('#profileImg').val()
+						};
+						alert('멤버 데이터 JSON 처리됨'+context);
+						alert(sign.id+"id");
+						alert(sign.password+"password");
+						alert(sign.name+"name");
+						alert(sign.tel+"tel");
+						alert(sign.email+"email");
+						alert(sign.profileImg+"profileImg");
+						$.ajax({
+							url : context+'/student/signup',
+							data : JSON.stringify(sign),
+							dataType : 'json',
+							type : 'post',
+							contentType: "application/json",
+							mimeType : "application/json",
+							async : false,
+							success : function(data) {
+								alert('성공');
+								if (data != null) {
+									alert(data.name+'님 회원으로 등록되었습니다');
+									/*$('#signup').click(function(){
+										alert('회원가입 완료!');
+										$('form').attr('action','${context}/student/signup')
+										.attr('method','post').submit();
+									}) 
+									$('#reset').click(function(){
+										alert('리셋!');
+									})*/
+								} else {
+									alert('회원가입 중 오류가 발생했습니다');
+									return false;
+								}
+							},
+							error : function(request,status,error) {
+								alert("에러!");
+								alert("code:"+request.status+"\n");
+								alert("message:"+request.responseText+"\n");
+								alert("error:"+error);
+							}
+						});
+				}); 
+			});
 		},
 		main : function(){
 			return '<div class="container">\
@@ -170,5 +221,28 @@
 			      </div>\
 			      </form>\
 			    </div>';
+		},
+		signup : function(){
+			return '<div class="container">\
+			   <form class="form-signin">\
+			     <h2 class="form-signin-heading">회원가입</h2>\
+			     <label for="id" class="sr-only">Id</label>\
+			     <input type="text" id="id" name="id" class="form-control" placeholder="Id" required autofocus="">\
+			     <label for="password" class="sr-only">Password</label>\
+			     <input type="password" id="password" name="password" class="form-control" required placeholder="Password">\
+			     <label for="repassword" class="sr-only">rePassword</label>\
+			     <input type="password" id="repassword" name="repassword" class="form-control" required placeholder="repassword">\
+			     <label for="name" class="sr-only">name</label>\
+			     <input type="text" id="name" name="name" class="form-control" placeholder="name" required autofocus="">\
+			     <label for="tel" class="sr-only">tel</label>\
+			     <input type="text" id="tel" name="tel" class="form-control" placeholder="tel">\
+			     <label for="email" class="sr-only">email</label>\
+			     <input type="text" id="email" name="email" class="form-control" placeholder="email">\
+			     <label for="profileImg" class="sr-only">profileImg</label>\
+			     <input type="text" id="profileImg" name="profileImg" class="form-control" placeholder="profileImg">\
+			     <button class="btn btn-lg btn-primary btn-block" id="signup" type="submit">확인</button>\
+			     <button class="btn btn-lg btn-primary btn-block" id="reset" type="reset">취소</button>\
+			   </form>\
+			 </div>';
 		}
 	};
