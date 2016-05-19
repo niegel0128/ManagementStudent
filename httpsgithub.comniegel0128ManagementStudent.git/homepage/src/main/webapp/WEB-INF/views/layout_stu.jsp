@@ -61,7 +61,7 @@
 	</div>
 	<a class="popup" href="#test">Open popup</a> 
 </body>
-	<script>
+	<!-- <script>
 	$(function() {
 		$('.popup').magnificPopup({
 			type : 'inline',
@@ -73,5 +73,5 @@
 			showCloseBtn:true
 		});
 	});
-	</script>
+	</script> -->
 </html>
