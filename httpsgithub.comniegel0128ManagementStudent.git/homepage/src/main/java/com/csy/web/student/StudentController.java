@@ -28,7 +28,7 @@ public class StudentController {
 		LOGGER.info("컨트롤러 학생수 :{}",list.size());
 	}
 	
-	@RequestMapping("/login")
+	@RequestMapping("/loginfrom")
 	public String login(){
 		LOGGER.info("StudentDTO : GET");
 		return "global/login.stu";
@@ -40,9 +40,13 @@ public class StudentController {
 		LOGGER.info("로그인 컨트롤러 파라미터 ID : {}",stu.getId());
 		LOGGER.info("로그인 컨트롤러 파라미터 PW : {}",stu.getPassword());
 		
-		student.setId(stu.getId());
-		student.setPassword(stu.getPassword());
-		service.login(student);
+
+		student = service.login(stu);
+		if (student.getId().equals(stu.getId())) {
+			LOGGER.info("===로그인 컨트롤에서 성공함===");
+		} else {
+			LOGGER.info("===로그인 컨트롤에서 실패함===");
+		}
 		return student;
 	}
 	
@@ -102,6 +106,7 @@ public class StudentController {
 		return "auth/student/calendar.stu";
 	}
 	
+	//@RequestMapping(value= "/main", method={RequestMethod.POST,RequestMethod.GET})
 	@RequestMapping("/main")
 	public String main(){
 		LOGGER.info("signup : GET");

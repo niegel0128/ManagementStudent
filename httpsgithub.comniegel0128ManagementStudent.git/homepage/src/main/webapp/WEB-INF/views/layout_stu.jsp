@@ -29,6 +29,11 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 	<script src='http://fullcalendar.io/js/fullcalendar-2.7.1/fullcalendar.js'></script>
 	
+	
+	   <%--  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    	<script type="text/javascript" src="${js}/ajax-sample.js"></script>
+	 --%>
 	<link href="${css}/newitem.css" rel="stylesheet">
 	<style>
 	.test {
@@ -51,10 +56,10 @@
 	<div id="footer" style="text-align:center">
 	<tiles:insertAttribute name="footer" />
 	</div>
-	<div id="test" class="test white-popup-block mfp-hide auto bg-white">
+	 <div id="test" class="test white-popup-block mfp-hide auto bg-white">
 		<jsp:include page="popup.jsp"></jsp:include>
 	</div>
-	<a class="popup" href="#test">Open popup</a>
+	<a class="popup" href="#test">Open popup</a> 
 </body>
 	<script>
 	$(function() {

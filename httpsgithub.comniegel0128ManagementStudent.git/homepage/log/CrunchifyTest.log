@@ -944,3 +944,264 @@ desc;  {executed in 209 msec}
 2016-05-17 16:17:44 [main] INFO  audit:171 - 7. Connection.close() returned 
 2016-05-17 16:17:44 [Thread-1] INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@314c508a: startup date [Tue May 17 16:17:34 KST 2016]; root of context hierarchy
 2016-05-17 16:17:44 [Thread-1] INFO  DefaultListableBeanFactory:444 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@38102d01: defining beans [multipartResolver,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSourceSpied,dataSource,transactionManager,sqlSessionFactory,sqlSession,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#1,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,adminBean,adminServiceImpl,attendBean,attendServiceImpl,CBoardController,CBoardDTO,CBoardServiceImpl,globalController,studentController,studentDTO,studentServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,tilesConfigurer,org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2016-05-18 18:42:01 [main] INFO  XmlBeanDefinitionReader:315 - Loading XML bean definitions from file [C:\Users\CSY\Documents\ManagementStudent\httpsgithub.comniegel0128ManagementStudent.git\homepage\target\classes\META-INF\file-context.xml]
+2016-05-18 18:42:01 [main] INFO  XmlBeanDefinitionReader:315 - Loading XML bean definitions from file [C:\Users\CSY\Documents\ManagementStudent\httpsgithub.comniegel0128ManagementStudent.git\homepage\target\classes\META-INF\handler-context.xml]
+2016-05-18 18:42:01 [main] INFO  XmlBeanDefinitionReader:315 - Loading XML bean definitions from file [C:\Users\CSY\Documents\ManagementStudent\httpsgithub.comniegel0128ManagementStudent.git\homepage\target\classes\META-INF\mybatis-context.xml]
+2016-05-18 18:42:01 [main] INFO  XmlBeanDefinitionReader:315 - Loading XML bean definitions from file [C:\Users\CSY\Documents\ManagementStudent\httpsgithub.comniegel0128ManagementStudent.git\homepage\target\classes\META-INF\servlet-context.xml]
+2016-05-18 18:42:01 [main] INFO  XmlBeanDefinitionReader:315 - Loading XML bean definitions from file [C:\Users\CSY\Documents\ManagementStudent\httpsgithub.comniegel0128ManagementStudent.git\homepage\target\classes\META-INF\tiles-context.xml]
+2016-05-18 18:42:01 [main] INFO  XmlBeanDefinitionReader:315 - Loading XML bean definitions from file [C:\Users\CSY\Documents\ManagementStudent\httpsgithub.comniegel0128ManagementStudent.git\homepage\target\classes\META-INF\view-context.xml]
+2016-05-18 18:42:01 [main] INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@314c508a: startup date [Wed May 18 18:42:01 KST 2016]; root of context hierarchy
+2016-05-18 18:42:02 [main] INFO  PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [config/mysql.properties]
+2016-05-18 18:42:02 [main] INFO  PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [config/mysql.properties]
+2016-05-18 18:42:02 [main] INFO  AutowiredAnnotationBeanPostProcessor:141 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-05-18 18:42:02 [main] INFO  DefaultListableBeanFactory:598 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@38102d01: defining beans [multipartResolver,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSourceSpied,dataSource,transactionManager,sqlSessionFactory,sqlSession,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#1,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,adminBean,adminServiceImpl,attendBean,attendServiceImpl,CBoardController,CBoardDTO,CBoardServiceImpl,globalController,graphDTO,graphServiceImpl,studentController,studentDTO,studentServiceImpl,tilesConfigurer,org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2016-05-18 18:42:02 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/cboard/list],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.csy.web.cboard.CBoardDTO> com.csy.web.cboard.CBoardController.list()
+2016-05-18 18:42:02 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.csy.web.global.GlobalController.list(java.util.Locale,org.springframework.ui.Model)
+2016-05-18 18:42:02 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/student/main],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.csy.web.student.StudentController.main()
+2016-05-18 18:42:02 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/student/list],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.csy.web.student.StudentController.list()
+2016-05-18 18:42:02 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/student/calendar],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.csy.web.student.StudentController.calendar()
+2016-05-18 18:42:02 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/student/graph],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.csy.web.student.StudentController.graph()
+2016-05-18 18:42:02 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/student/loginfrom],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.csy.web.student.StudentController.login()
+2016-05-18 18:42:02 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/student/login],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.csy.web.student.StudentDTO com.csy.web.student.StudentController.login(com.csy.web.student.StudentDTO)
+2016-05-18 18:42:02 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/student/logout],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.csy.web.student.StudentController.logout(org.springframework.web.bind.support.SessionStatus)
+2016-05-18 18:42:02 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/student/cboard],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.csy.web.student.StudentController.cboard()
+2016-05-18 18:42:02 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/student/newitem],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.csy.web.student.StudentController.newitem()
+2016-05-18 18:42:02 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/student/signup],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.csy.web.student.StudentController.signup()
+2016-05-18 18:42:02 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/student/signup],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.csy.web.student.StudentDTO com.csy.web.student.StudentController.signup(com.csy.web.student.StudentDTO)
+2016-05-18 18:42:03 [main] INFO  SimpleUrlHandlerMapping:315 - Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2016-05-18 18:42:03 [main] INFO  TilesAccess:93 - Publishing TilesContext for context: org.springframework.web.servlet.view.tiles3.SpringWildcardServletTilesApplicationContext
+2016-05-18 18:42:06 [main] INFO  connection:524 - 1. Connection opened
+2016-05-18 18:42:06 [main] INFO  audit:171 - 1. Connection.new Connection returned 
+2016-05-18 18:42:06 [main] INFO  audit:171 - 1. Connection.getAutoCommit() returned true
+2016-05-18 18:42:06 [main] INFO  audit:171 - 1. PreparedStatement.new PreparedStatement returned 
+2016-05-18 18:42:06 [main] INFO  audit:171 - 1. Connection.prepareStatement(select 
+			seq,
+			label,
+			fillColor,
+			strokeColor,
+			pointColor,
+			pointStrokeColor,
+			pointHighlightFill,
+			pointHighlightStroke,
+			data1,
+			data2,
+			data3,
+			data4,
+			data5
+		from graph;) returned net.sf.log4jdbc.PreparedStatementSpy@6111ba37
+2016-05-18 18:42:06 [main] INFO  sqlonly:74 - SQL         :  select 
+			seq,
+			label,
+			fillColor,
+			strokeColor,
+			pointColor,
+			pointStrokeColor,
+			pointHighlightFill,
+			pointHighlightStroke,
+			data1,
+			data2,
+			data3,
+			data4,
+			data5
+		from graph;
+2016-05-18 18:42:06 [main] INFO  sqltiming:357 - select seq, label, fillColor, strokeColor, pointColor, pointStrokeColor, pointHighlightFill, 
+pointHighlightStroke, data1, data2, data3, data4, data5 from graph;  {executed in 157 msec}
+2016-05-18 18:42:06 [main] INFO  audit:171 - 1. PreparedStatement.execute() returned true
+2016-05-18 18:42:06 [main] INFO  resultset:171 - 1. ResultSet.new ResultSet returned 
+2016-05-18 18:42:06 [main] INFO  audit:171 - 1. PreparedStatement.getResultSet() returned net.sf.log4jdbc.ResultSetSpy@4721d212
+2016-05-18 18:42:06 [main] INFO  resultset:171 - 1. ResultSet.getMetaData() returned com.mysql.jdbc.ResultSetMetaData@207ea13 - Field level information: 
+	com.mysql.jdbc.Field@4bff1903[catalog=ms,tableName=graph,originalTableName=graph,columnName=seq,originalColumnName=seq,mysqlType=3(FIELD_TYPE_LONG),flags= AUTO_INCREMENT PRIMARY_KEY, charsetIndex=63, charsetName=US-ASCII]
+	com.mysql.jdbc.Field@62dae540[catalog=ms,tableName=graph,originalTableName=graph,columnName=label,originalColumnName=label,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.jdbc.Field@5827af16[catalog=ms,tableName=graph,originalTableName=graph,columnName=fillColor,originalColumnName=fillColor,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.jdbc.Field@654d8173[catalog=ms,tableName=graph,originalTableName=graph,columnName=strokeColor,originalColumnName=strokeColor,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.jdbc.Field@56c9bbd8[catalog=ms,tableName=graph,originalTableName=graph,columnName=pointColor,originalColumnName=pointColor,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.jdbc.Field@630cb4a4[catalog=ms,tableName=graph,originalTableName=graph,columnName=pointStrokeColor,originalColumnName=pointStrokeColor,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.jdbc.Field@636e8cc[catalog=ms,tableName=graph,originalTableName=graph,columnName=pointHighlightFill,originalColumnName=pointHighlightFill,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.jdbc.Field@f79a760[catalog=ms,tableName=graph,originalTableName=graph,columnName=pointHighlightStroke,originalColumnName=pointHighlightStroke,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.jdbc.Field@14f5da2c[catalog=ms,tableName=graph,originalTableName=graph,columnName=data1,originalColumnName=data1,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.jdbc.Field@12dae582[catalog=ms,tableName=graph,originalTableName=graph,columnName=data2,originalColumnName=data2,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.jdbc.Field@239b0f9d[catalog=ms,tableName=graph,originalTableName=graph,columnName=data3,originalColumnName=data3,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.jdbc.Field@619bfe29[catalog=ms,tableName=graph,originalTableName=graph,columnName=data4,originalColumnName=data4,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.jdbc.Field@5b057c8c[catalog=ms,tableName=graph,originalTableName=graph,columnName=data5,originalColumnName=data5,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=33, charsetName=UTF-8]
+2016-05-18 18:42:06 [main] INFO  resultset:171 - 1. ResultSet.getType() returned 1003
+2016-05-18 18:42:06 [main] INFO  resultset:171 - 1. ResultSet.next() returned true
+2016-05-18 18:42:06 [main] INFO  resultset:171 - 1. ResultSet.getInt(seq) returned 1
+2016-05-18 18:42:06 [main] INFO  resultset:171 - 1. ResultSet.wasNull() returned false
+2016-05-18 18:42:06 [main] INFO  resultset:171 - 1. ResultSet.getString(label) returned first
+2016-05-18 18:42:06 [main] INFO  resultset:171 - 1. ResultSet.wasNull() returned false
+2016-05-18 18:42:06 [main] INFO  resultset:171 - 1. ResultSet.getString(fillColor) returned rgba(220,220,220,0.2)
+2016-05-18 18:42:06 [main] INFO  resultset:171 - 1. ResultSet.wasNull() returned false
+2016-05-18 18:42:06 [main] INFO  resultset:171 - 1. ResultSet.getString(strokeColor) returned rgba(220,220,220,1)
+2016-05-18 18:42:06 [main] INFO  resultset:171 - 1. ResultSet.wasNull() returned false
+2016-05-18 18:42:06 [main] INFO  resultset:171 - 1. ResultSet.getString(pointColor) returned rgba(220,220,220,1)
+2016-05-18 18:42:06 [main] INFO  resultset:171 - 1. ResultSet.wasNull() returned false
+2016-05-18 18:42:06 [main] INFO  resultset:171 - 1. ResultSet.getString(pointStrokeColor) returned #fff
+2016-05-18 18:42:06 [main] INFO  resultset:171 - 1. ResultSet.wasNull() returned false
+2016-05-18 18:42:06 [main] INFO  resultset:171 - 1. ResultSet.getString(pointHighlightFill) returned #fff
+2016-05-18 18:42:06 [main] INFO  resultset:171 - 1. ResultSet.wasNull() returned false
+2016-05-18 18:42:06 [main] INFO  resultset:171 - 1. ResultSet.getString(pointHighlightStroke) returned rgba(220,220,220,1)
+2016-05-18 18:42:06 [main] INFO  resultset:171 - 1. ResultSet.wasNull() returned false
+2016-05-18 18:42:06 [main] INFO  resultset:171 - 1. ResultSet.next() returned true
+2016-05-18 18:42:06 [main] INFO  resultset:171 - 1. ResultSet.getInt(seq) returned 2
+2016-05-18 18:42:06 [main] INFO  resultset:171 - 1. ResultSet.wasNull() returned false
+2016-05-18 18:42:06 [main] INFO  resultset:171 - 1. ResultSet.getString(label) returned second
+2016-05-18 18:42:06 [main] INFO  resultset:171 - 1. ResultSet.wasNull() returned false
+2016-05-18 18:42:06 [main] INFO  resultset:171 - 1. ResultSet.getString(fillColor) returned rgba(151,187,205,0.2)
+2016-05-18 18:42:06 [main] INFO  resultset:171 - 1. ResultSet.wasNull() returned false
+2016-05-18 18:42:06 [main] INFO  resultset:171 - 1. ResultSet.getString(strokeColor) returned rgba(151,187,205,1)
+2016-05-18 18:42:06 [main] INFO  resultset:171 - 1. ResultSet.wasNull() returned false
+2016-05-18 18:42:06 [main] INFO  resultset:171 - 1. ResultSet.getString(pointColor) returned rgba(151,187,205,1)
+2016-05-18 18:42:06 [main] INFO  resultset:171 - 1. ResultSet.wasNull() returned false
+2016-05-18 18:42:06 [main] INFO  resultset:171 - 1. ResultSet.getString(pointStrokeColor) returned #fff
+2016-05-18 18:42:06 [main] INFO  resultset:171 - 1. ResultSet.wasNull() returned false
+2016-05-18 18:42:06 [main] INFO  resultset:171 - 1. ResultSet.getString(pointHighlightFill) returned #fff
+2016-05-18 18:42:06 [main] INFO  resultset:171 - 1. ResultSet.wasNull() returned false
+2016-05-18 18:42:06 [main] INFO  resultset:171 - 1. ResultSet.getString(pointHighlightStroke) returned rgba(151,187,205,1)
+2016-05-18 18:42:06 [main] INFO  resultset:171 - 1. ResultSet.wasNull() returned false
+2016-05-18 18:42:06 [main] INFO  resultsettable:108 - |----|-------|----------------------|--------------------|--------------------|-----------------|-------------------|---------------------|---------|---------|---------|---------|---------|
+2016-05-18 18:42:06 [main] INFO  resultsettable:108 - |seq |label  |fillColor             |strokeColor         |pointColor          |pointStrokeColor |pointHighlightFill |pointHighlightStroke |data1    |data2    |data3    |data4    |data5    |
+2016-05-18 18:42:06 [main] INFO  resultsettable:108 - |----|-------|----------------------|--------------------|--------------------|-----------------|-------------------|---------------------|---------|---------|---------|---------|---------|
+2016-05-18 18:42:06 [main] INFO  resultsettable:108 - |1   |first  |rgba(220,220,220,0.2) |rgba(220,220,220,1) |rgba(220,220,220,1) |#fff             |#fff               |rgba(220,220,220,1)  |[unread] |[unread] |[unread] |[unread] |[unread] |
+2016-05-18 18:42:06 [main] INFO  resultsettable:108 - |2   |second |rgba(151,187,205,0.2) |rgba(151,187,205,1) |rgba(151,187,205,1) |#fff             |#fff               |rgba(151,187,205,1)  |[unread] |[unread] |[unread] |[unread] |[unread] |
+2016-05-18 18:42:06 [main] INFO  resultsettable:108 - |----|-------|----------------------|--------------------|--------------------|-----------------|-------------------|---------------------|---------|---------|---------|---------|---------|
+2016-05-18 18:42:06 [main] INFO  resultset:171 - 1. ResultSet.next() returned false
+2016-05-18 18:42:06 [main] INFO  resultset:171 - 1. ResultSet.close() returned null
+2016-05-18 18:42:06 [main] INFO  audit:171 - 1. PreparedStatement.getConnection() returned net.sf.log4jdbc.ConnectionSpy@a8c1f44
+2016-05-18 18:42:06 [main] INFO  audit:171 - 1. Connection.getMetaData() returned org.apache.commons.dbcp.DelegatingDatabaseMetaData@150ab4ed
+2016-05-18 18:42:06 [main] INFO  audit:171 - 1. PreparedStatement.getMoreResults() returned false
+2016-05-18 18:42:06 [main] INFO  audit:171 - 1. PreparedStatement.getUpdateCount() returned -1
+2016-05-18 18:42:06 [main] INFO  audit:171 - 1. PreparedStatement.close() returned 
+2016-05-18 18:42:06 [main] INFO  connection:543 - 1. Connection closed
+2016-05-18 18:42:06 [main] INFO  audit:171 - 1. Connection.close() returned 
+2016-05-18 18:42:06 [Thread-1] INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@314c508a: startup date [Wed May 18 18:42:01 KST 2016]; root of context hierarchy
+2016-05-18 18:42:06 [Thread-1] INFO  DefaultListableBeanFactory:444 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@38102d01: defining beans [multipartResolver,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSourceSpied,dataSource,transactionManager,sqlSessionFactory,sqlSession,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#1,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,adminBean,adminServiceImpl,attendBean,attendServiceImpl,CBoardController,CBoardDTO,CBoardServiceImpl,globalController,graphDTO,graphServiceImpl,studentController,studentDTO,studentServiceImpl,tilesConfigurer,org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2016-05-18 18:42:23 [main] INFO  XmlBeanDefinitionReader:315 - Loading XML bean definitions from file [C:\Users\CSY\Documents\ManagementStudent\httpsgithub.comniegel0128ManagementStudent.git\homepage\target\classes\META-INF\file-context.xml]
+2016-05-18 18:42:23 [main] INFO  XmlBeanDefinitionReader:315 - Loading XML bean definitions from file [C:\Users\CSY\Documents\ManagementStudent\httpsgithub.comniegel0128ManagementStudent.git\homepage\target\classes\META-INF\handler-context.xml]
+2016-05-18 18:42:23 [main] INFO  XmlBeanDefinitionReader:315 - Loading XML bean definitions from file [C:\Users\CSY\Documents\ManagementStudent\httpsgithub.comniegel0128ManagementStudent.git\homepage\target\classes\META-INF\mybatis-context.xml]
+2016-05-18 18:42:23 [main] INFO  XmlBeanDefinitionReader:315 - Loading XML bean definitions from file [C:\Users\CSY\Documents\ManagementStudent\httpsgithub.comniegel0128ManagementStudent.git\homepage\target\classes\META-INF\servlet-context.xml]
+2016-05-18 18:42:23 [main] INFO  XmlBeanDefinitionReader:315 - Loading XML bean definitions from file [C:\Users\CSY\Documents\ManagementStudent\httpsgithub.comniegel0128ManagementStudent.git\homepage\target\classes\META-INF\tiles-context.xml]
+2016-05-18 18:42:23 [main] INFO  XmlBeanDefinitionReader:315 - Loading XML bean definitions from file [C:\Users\CSY\Documents\ManagementStudent\httpsgithub.comniegel0128ManagementStudent.git\homepage\target\classes\META-INF\view-context.xml]
+2016-05-18 18:42:23 [main] INFO  GenericWebApplicationContext:510 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@314c508a: startup date [Wed May 18 18:42:23 KST 2016]; root of context hierarchy
+2016-05-18 18:42:23 [main] INFO  PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [config/mysql.properties]
+2016-05-18 18:42:23 [main] INFO  PropertyPlaceholderConfigurer:172 - Loading properties file from class path resource [config/mysql.properties]
+2016-05-18 18:42:23 [main] INFO  AutowiredAnnotationBeanPostProcessor:141 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-05-18 18:42:23 [main] INFO  DefaultListableBeanFactory:598 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@38102d01: defining beans [multipartResolver,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSourceSpied,dataSource,transactionManager,sqlSessionFactory,sqlSession,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#1,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,adminBean,adminServiceImpl,attendBean,attendServiceImpl,CBoardController,CBoardDTO,CBoardServiceImpl,globalController,graphDTO,graphServiceImpl,studentController,studentDTO,studentServiceImpl,tilesConfigurer,org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2016-05-18 18:42:24 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/cboard/list],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.csy.web.cboard.CBoardDTO> com.csy.web.cboard.CBoardController.list()
+2016-05-18 18:42:24 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.csy.web.global.GlobalController.list(java.util.Locale,org.springframework.ui.Model)
+2016-05-18 18:42:24 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/student/main],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.csy.web.student.StudentController.main()
+2016-05-18 18:42:24 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/student/list],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.csy.web.student.StudentController.list()
+2016-05-18 18:42:24 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/student/graph],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.csy.web.student.StudentController.graph()
+2016-05-18 18:42:24 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/student/loginfrom],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.csy.web.student.StudentController.login()
+2016-05-18 18:42:24 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/student/login],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.csy.web.student.StudentDTO com.csy.web.student.StudentController.login(com.csy.web.student.StudentDTO)
+2016-05-18 18:42:24 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/student/logout],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.csy.web.student.StudentController.logout(org.springframework.web.bind.support.SessionStatus)
+2016-05-18 18:42:24 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/student/calendar],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.csy.web.student.StudentController.calendar()
+2016-05-18 18:42:24 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/student/signup],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.csy.web.student.StudentController.signup()
+2016-05-18 18:42:24 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/student/signup],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.csy.web.student.StudentDTO com.csy.web.student.StudentController.signup(com.csy.web.student.StudentDTO)
+2016-05-18 18:42:24 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/student/cboard],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.csy.web.student.StudentController.cboard()
+2016-05-18 18:42:24 [main] INFO  RequestMappingHandlerMapping:179 - Mapped "{[/student/newitem],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.csy.web.student.StudentController.newitem()
+2016-05-18 18:42:25 [main] INFO  SimpleUrlHandlerMapping:315 - Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2016-05-18 18:42:25 [main] INFO  TilesAccess:93 - Publishing TilesContext for context: org.springframework.web.servlet.view.tiles3.SpringWildcardServletTilesApplicationContext
+2016-05-18 18:42:29 [main] INFO  connection:524 - 1. Connection opened
+2016-05-18 18:42:29 [main] INFO  audit:171 - 1. Connection.new Connection returned 
+2016-05-18 18:42:29 [main] INFO  audit:171 - 1. Connection.getAutoCommit() returned true
+2016-05-18 18:42:29 [main] INFO  audit:171 - 1. PreparedStatement.new PreparedStatement returned 
+2016-05-18 18:42:29 [main] INFO  audit:171 - 1. Connection.prepareStatement(select 
+			seq,
+			label,
+			fillColor,
+			strokeColor,
+			pointColor,
+			pointStrokeColor,
+			pointHighlightFill,
+			pointHighlightStroke,
+			data1,
+			data2,
+			data3,
+			data4,
+			data5
+		from graph;) returned net.sf.log4jdbc.PreparedStatementSpy@6111ba37
+2016-05-18 18:42:29 [main] INFO  sqlonly:74 - SQL         :  select 
+			seq,
+			label,
+			fillColor,
+			strokeColor,
+			pointColor,
+			pointStrokeColor,
+			pointHighlightFill,
+			pointHighlightStroke,
+			data1,
+			data2,
+			data3,
+			data4,
+			data5
+		from graph;
+2016-05-18 18:42:29 [main] INFO  sqltiming:357 - select seq, label, fillColor, strokeColor, pointColor, pointStrokeColor, pointHighlightFill, 
+pointHighlightStroke, data1, data2, data3, data4, data5 from graph;  {executed in 190 msec}
+2016-05-18 18:42:29 [main] INFO  audit:171 - 1. PreparedStatement.execute() returned true
+2016-05-18 18:42:29 [main] INFO  resultset:171 - 1. ResultSet.new ResultSet returned 
+2016-05-18 18:42:29 [main] INFO  audit:171 - 1. PreparedStatement.getResultSet() returned net.sf.log4jdbc.ResultSetSpy@4721d212
+2016-05-18 18:42:29 [main] INFO  resultset:171 - 1. ResultSet.getMetaData() returned com.mysql.jdbc.ResultSetMetaData@207ea13 - Field level information: 
+	com.mysql.jdbc.Field@4bff1903[catalog=ms,tableName=graph,originalTableName=graph,columnName=seq,originalColumnName=seq,mysqlType=3(FIELD_TYPE_LONG),flags= AUTO_INCREMENT PRIMARY_KEY, charsetIndex=63, charsetName=US-ASCII]
+	com.mysql.jdbc.Field@62dae540[catalog=ms,tableName=graph,originalTableName=graph,columnName=label,originalColumnName=label,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.jdbc.Field@5827af16[catalog=ms,tableName=graph,originalTableName=graph,columnName=fillColor,originalColumnName=fillColor,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.jdbc.Field@654d8173[catalog=ms,tableName=graph,originalTableName=graph,columnName=strokeColor,originalColumnName=strokeColor,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.jdbc.Field@56c9bbd8[catalog=ms,tableName=graph,originalTableName=graph,columnName=pointColor,originalColumnName=pointColor,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.jdbc.Field@630cb4a4[catalog=ms,tableName=graph,originalTableName=graph,columnName=pointStrokeColor,originalColumnName=pointStrokeColor,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.jdbc.Field@636e8cc[catalog=ms,tableName=graph,originalTableName=graph,columnName=pointHighlightFill,originalColumnName=pointHighlightFill,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.jdbc.Field@f79a760[catalog=ms,tableName=graph,originalTableName=graph,columnName=pointHighlightStroke,originalColumnName=pointHighlightStroke,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.jdbc.Field@14f5da2c[catalog=ms,tableName=graph,originalTableName=graph,columnName=data1,originalColumnName=data1,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.jdbc.Field@12dae582[catalog=ms,tableName=graph,originalTableName=graph,columnName=data2,originalColumnName=data2,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.jdbc.Field@239b0f9d[catalog=ms,tableName=graph,originalTableName=graph,columnName=data3,originalColumnName=data3,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.jdbc.Field@619bfe29[catalog=ms,tableName=graph,originalTableName=graph,columnName=data4,originalColumnName=data4,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=33, charsetName=UTF-8]
+	com.mysql.jdbc.Field@5b057c8c[catalog=ms,tableName=graph,originalTableName=graph,columnName=data5,originalColumnName=data5,mysqlType=253(FIELD_TYPE_VAR_STRING),flags=, charsetIndex=33, charsetName=UTF-8]
+2016-05-18 18:42:29 [main] INFO  resultset:171 - 1. ResultSet.getType() returned 1003
+2016-05-18 18:42:29 [main] INFO  resultset:171 - 1. ResultSet.next() returned true
+2016-05-18 18:42:29 [main] INFO  resultset:171 - 1. ResultSet.getInt(seq) returned 1
+2016-05-18 18:42:29 [main] INFO  resultset:171 - 1. ResultSet.wasNull() returned false
+2016-05-18 18:42:29 [main] INFO  resultset:171 - 1. ResultSet.getString(label) returned first
+2016-05-18 18:42:29 [main] INFO  resultset:171 - 1. ResultSet.wasNull() returned false
+2016-05-18 18:42:29 [main] INFO  resultset:171 - 1. ResultSet.getString(fillColor) returned rgba(220,220,220,0.2)
+2016-05-18 18:42:29 [main] INFO  resultset:171 - 1. ResultSet.wasNull() returned false
+2016-05-18 18:42:29 [main] INFO  resultset:171 - 1. ResultSet.getString(strokeColor) returned rgba(220,220,220,1)
+2016-05-18 18:42:29 [main] INFO  resultset:171 - 1. ResultSet.wasNull() returned false
+2016-05-18 18:42:29 [main] INFO  resultset:171 - 1. ResultSet.getString(pointColor) returned rgba(220,220,220,1)
+2016-05-18 18:42:29 [main] INFO  resultset:171 - 1. ResultSet.wasNull() returned false
+2016-05-18 18:42:29 [main] INFO  resultset:171 - 1. ResultSet.getString(pointStrokeColor) returned #fff
+2016-05-18 18:42:29 [main] INFO  resultset:171 - 1. ResultSet.wasNull() returned false
+2016-05-18 18:42:29 [main] INFO  resultset:171 - 1. ResultSet.getString(pointHighlightFill) returned #fff
+2016-05-18 18:42:29 [main] INFO  resultset:171 - 1. ResultSet.wasNull() returned false
+2016-05-18 18:42:29 [main] INFO  resultset:171 - 1. ResultSet.getString(pointHighlightStroke) returned rgba(220,220,220,1)
+2016-05-18 18:42:29 [main] INFO  resultset:171 - 1. ResultSet.wasNull() returned false
+2016-05-18 18:42:29 [main] INFO  resultset:171 - 1. ResultSet.next() returned true
+2016-05-18 18:42:29 [main] INFO  resultset:171 - 1. ResultSet.getInt(seq) returned 2
+2016-05-18 18:42:29 [main] INFO  resultset:171 - 1. ResultSet.wasNull() returned false
+2016-05-18 18:42:29 [main] INFO  resultset:171 - 1. ResultSet.getString(label) returned second
+2016-05-18 18:42:29 [main] INFO  resultset:171 - 1. ResultSet.wasNull() returned false
+2016-05-18 18:42:29 [main] INFO  resultset:171 - 1. ResultSet.getString(fillColor) returned rgba(151,187,205,0.2)
+2016-05-18 18:42:29 [main] INFO  resultset:171 - 1. ResultSet.wasNull() returned false
+2016-05-18 18:42:29 [main] INFO  resultset:171 - 1. ResultSet.getString(strokeColor) returned rgba(151,187,205,1)
+2016-05-18 18:42:29 [main] INFO  resultset:171 - 1. ResultSet.wasNull() returned false
+2016-05-18 18:42:29 [main] INFO  resultset:171 - 1. ResultSet.getString(pointColor) returned rgba(151,187,205,1)
+2016-05-18 18:42:29 [main] INFO  resultset:171 - 1. ResultSet.wasNull() returned false
+2016-05-18 18:42:29 [main] INFO  resultset:171 - 1. ResultSet.getString(pointStrokeColor) returned #fff
+2016-05-18 18:42:29 [main] INFO  resultset:171 - 1. ResultSet.wasNull() returned false
+2016-05-18 18:42:29 [main] INFO  resultset:171 - 1. ResultSet.getString(pointHighlightFill) returned #fff
+2016-05-18 18:42:29 [main] INFO  resultset:171 - 1. ResultSet.wasNull() returned false
+2016-05-18 18:42:29 [main] INFO  resultset:171 - 1. ResultSet.getString(pointHighlightStroke) returned rgba(151,187,205,1)
+2016-05-18 18:42:29 [main] INFO  resultset:171 - 1. ResultSet.wasNull() returned false
+2016-05-18 18:42:29 [main] INFO  resultsettable:108 - |----|-------|----------------------|--------------------|--------------------|-----------------|-------------------|---------------------|---------|---------|---------|---------|---------|
+2016-05-18 18:42:29 [main] INFO  resultsettable:108 - |seq |label  |fillColor             |strokeColor         |pointColor          |pointStrokeColor |pointHighlightFill |pointHighlightStroke |data1    |data2    |data3    |data4    |data5    |
+2016-05-18 18:42:29 [main] INFO  resultsettable:108 - |----|-------|----------------------|--------------------|--------------------|-----------------|-------------------|---------------------|---------|---------|---------|---------|---------|
+2016-05-18 18:42:29 [main] INFO  resultsettable:108 - |1   |first  |rgba(220,220,220,0.2) |rgba(220,220,220,1) |rgba(220,220,220,1) |#fff             |#fff               |rgba(220,220,220,1)  |[unread] |[unread] |[unread] |[unread] |[unread] |
+2016-05-18 18:42:29 [main] INFO  resultsettable:108 - |2   |second |rgba(151,187,205,0.2) |rgba(151,187,205,1) |rgba(151,187,205,1) |#fff             |#fff               |rgba(151,187,205,1)  |[unread] |[unread] |[unread] |[unread] |[unread] |
+2016-05-18 18:42:29 [main] INFO  resultsettable:108 - |----|-------|----------------------|--------------------|--------------------|-----------------|-------------------|---------------------|---------|---------|---------|---------|---------|
+2016-05-18 18:42:29 [main] INFO  resultset:171 - 1. ResultSet.next() returned false
+2016-05-18 18:42:29 [main] INFO  resultset:171 - 1. ResultSet.close() returned null
+2016-05-18 18:42:29 [main] INFO  audit:171 - 1. PreparedStatement.getConnection() returned net.sf.log4jdbc.ConnectionSpy@a8c1f44
+2016-05-18 18:42:29 [main] INFO  audit:171 - 1. Connection.getMetaData() returned org.apache.commons.dbcp.DelegatingDatabaseMetaData@150ab4ed
+2016-05-18 18:42:29 [main] INFO  audit:171 - 1. PreparedStatement.getMoreResults() returned false
+2016-05-18 18:42:29 [main] INFO  audit:171 - 1. PreparedStatement.getUpdateCount() returned -1
+2016-05-18 18:42:29 [main] INFO  audit:171 - 1. PreparedStatement.close() returned 
+2016-05-18 18:42:29 [main] INFO  connection:543 - 1. Connection closed
+2016-05-18 18:42:29 [main] INFO  audit:171 - 1. Connection.close() returned 
+2016-05-18 18:42:29 [Thread-1] INFO  GenericWebApplicationContext:1042 - Closing org.springframework.web.context.support.GenericWebApplicationContext@314c508a: startup date [Wed May 18 18:42:23 KST 2016]; root of context hierarchy

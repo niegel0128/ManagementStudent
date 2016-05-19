@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.csy.web.mapper.GraphMapper">
+   
+   <select id="selectAll" resultType="com.csy.web.graph.GraphDTO">
+       select 
+			seq,
+			label,
+			fillColor,
+			strokeColor,
+			pointColor,
+			pointStrokeColor,
+			pointHighlightFill,
+			pointHighlightStroke,
+			data1,
+			data2,
+			data3,
+			data4,
+			data5
+		from graph;
+   </select>
+   
+</mapper>	
