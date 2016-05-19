@@ -1,5 +1,6 @@
 package com.csy.web.student;
 
+import java.lang.annotation.Annotation;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -42,7 +43,7 @@ public class StudentController {
 		
 
 		student = service.login(stu);
-		if (student.getId().equals(stu.getId())) {
+		if (student!=null && student.getId().equals(stu.getId())) {
 			LOGGER.info("===로그인 컨트롤에서 성공함===");
 		} else {
 			LOGGER.info("===로그인 컨트롤에서 실패함===");

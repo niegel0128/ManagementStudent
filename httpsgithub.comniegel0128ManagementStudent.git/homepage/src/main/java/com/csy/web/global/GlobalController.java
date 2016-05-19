@@ -22,7 +22,7 @@ public class GlobalController {
 		/*logger.info("홈 컨트롤러 :");*/
 		logger.info("홈컨트롤러");
 		logger.debug("홈컨트롤러");
-		return "global/login.stu";
-		//return "student/googlechart.stu";
+		//return "global/login.stu";
+		return "student/googlechart.stu";
 	}
 }

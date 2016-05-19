@@ -1,6 +1,7 @@
 /**
  * student.js
  */
+
 	var student = {
 		context : '',
 		init : function(context) {
@@ -26,10 +27,11 @@
 					type : 'post',
 					contentType: "application/json",
 					mimeType : "application/json",
-					async : false,
-					error : function(request,status,error) {
-						alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
-					}
+					async : true
+				})
+				.fail(function(request,status,error) {
+					alert("아이디와 비밀번호를 확인하세요");
+					//alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
 				})
 				.done( function(data) {
 					if (data != null) {
@@ -144,22 +146,22 @@
 					      <td style="vertical-align: middle;">9:00 신촌 카페</td>\
 		                </tr>\
 		                <tr>\
-		                  <td style="text-align: center; vertical-align: middle;"><strong><p><font size="5">15</font></p></strong> <p>May</p></td>\
+		                  <td style="text-align: center; vertical-align: middle;"><strong><p><font size="5">16</font></p></strong> <p>May</p></td>\
 					      <td style="text-align: center; vertical-align: middle;">16일 수업</td>\
 					      <td style="vertical-align: middle;">12:00 신촌 카페</td>\
 		                </tr>\
 		                <tr>\
-		                  <td style="text-align: center; vertical-align: middle;"><strong><p><font size="5">15</font></p></strong> <p>May</p></td>\
+		                  <td style="text-align: center; vertical-align: middle;"><strong><p><font size="5">18</font></p></strong> <p>May</p></td>\
 					      <td style="text-align: center; vertical-align: middle;">18일 수업</td>\
 					      <td style="vertical-align: middle;">13:00 신촌 카페</td>\
 		                </tr>\
 		                <tr>\
-		                  <td style="text-align: center; vertical-align: middle;"><strong><p><font size="5">15</font></p></strong> <p>May</p></td>\
+		                  <td style="text-align: center; vertical-align: middle;"><strong><p><font size="5">23</font></p></strong> <p>May</p></td>\
 					      <td style="text-align: center; vertical-align: middle;">23일 수업</td>\
 					      <td style="vertical-align: middle;">15:00 신촌 카페</td>\
 		                </tr>\
 		                <tr>\
-		                  <td style="text-align: center; vertical-align: middle;"><strong><p><font size="5">15</font></p></strong> <p>May</p></td>\
+		                  <td style="text-align: center; vertical-align: middle;"><strong><p><font size="5">26</font></p></strong> <p>May</p></td>\
 					      <td style="text-align: center; vertical-align: middle;">26일 수업</td>\
 					      <td style="vertical-align: middle;">19:00 신촌 카페</td>\
 		                </tr>\
@@ -176,12 +178,17 @@
 		        <div class="col-lg-6" id="cboard">\
 		        </div>\
 		      </div>\
+		      <div class="row" align="center">\
+		      	<h2><i class="glyphicon glyphicon-road"></i> 지도 </h2>\
+		  		<div id="map_view" align="center" style="width:500px; height:300px;"></div>\
+		  	  </div>\
 		      </form>\
 		    </div>';
 			
 			$('#content').html(mainpage);
 			student.calendar();
 			student.cboard();
+			student.googleMap();
 		},
 		signup : function(){
 			return '<div class="container">\
@@ -306,16 +313,51 @@
 			$('#cboard').html(cboardlist);
 			});
 			
-		}
-		
-		/*graph: function(context) {
-			return '<div class="col-lg-6">\
-	          <h2><i clfass="glyphicon glyphicon-stats"></i> 출석 그래프</h2>\
-	          <canvas id="myChart" class="col-lg-6"></canvas>\
-	          <p><a class="btn btn-primary" id="graphBtn" role="button">View details »</a></p>\
-	        </div>';
 		},
-		newitem: function(context) {
-			return '';
-		}*/
+		
+		googleMap : function() {
+			alert("구글 맵 출력~");
+				/*
+					http://openapi.map.naver.com/api/geocode.php?key=f32441ebcd3cc9de474f8081df1e54e3&encoding=euc-kr&coord=LatLng&query=서울특별시 강남구 강남대로 456
+	                위의 링크에서 뒤에 주소를 적으면 x,y 값을 구할수 있습니다.
+				*/
+				var Y_point			= 35.87110100714382;		// Y 좌표
+				var X_point			= 128.60169690333006;		// X 좌표
+
+				var zoomLevel		= 16;						// 지도의 확대 레벨 : 숫자가 클수록 확대정도가 큼
+
+				var markerTitle		= "일인개발";				// 현재 위치 마커에 마우스를 오버을때 나타나는 정보
+				var markerMaxWidth	= 300;						// 마커를 클릭했을때 나타나는 말풍선의 최대 크기
+
+				// 말풍선 내용
+				var contentString	= '<div>' +
+				'<h2>일인개발</h2>'+
+				'<p>원페이지 형태로 api구현의 집합소<br />' +
+				'<a href="#" target="_blank">링크테스트</a>'+ //링크도 넣을 수 있음
+				'</div>';
+				var myLatlng = new google.maps.LatLng(Y_point, X_point);
+				var mapOptions = {
+									zoom: zoomLevel,
+									center: myLatlng,
+									mapTypeId: google.maps.MapTypeId.ROADMAP
+				}
+				var map = new google.maps.Map(document.getElementById('map_view'), mapOptions);
+
+				var marker = new google.maps.Marker({
+														position: myLatlng,
+														map: map,
+														title: markerTitle
+				});
+
+				var infowindow = new google.maps.InfoWindow(
+															{
+																content: contentString,
+																maxWidth: markerMaxWidth
+															}
+				);
+
+				google.maps.event.addListener(marker, 'click', function() {
+					infowindow.open(map, marker);
+				});
+			}
 	}

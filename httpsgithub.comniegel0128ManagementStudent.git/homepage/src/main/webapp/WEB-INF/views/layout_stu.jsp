@@ -29,6 +29,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 	<script src='http://fullcalendar.io/js/fullcalendar-2.7.1/fullcalendar.js'></script>
 	
+	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 	
 	   <%--  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>

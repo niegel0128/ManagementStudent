@@ -70,7 +70,8 @@ public class StudentServiceImpl implements StudentService{
 		LOGGER.info("StudentServiceImpl:login");
 		StudentMapper StudentMapper = session.getMapper(StudentMapper.class);
 		student = StudentMapper.login(stu);
-		if(student.getId().equals(stu.getId())){
+		
+		if(student!=null && student.getId().equals(stu.getId())){
 			LOGGER.info("StudentServiceImpl:login : login()  tjdrhd gn  id= {}",stu.getId());
 			return student;
 		} else {
