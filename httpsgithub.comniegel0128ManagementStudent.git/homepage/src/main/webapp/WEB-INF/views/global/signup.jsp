@@ -25,16 +25,6 @@
  </div>
  <script>
  $(function(){
-	$('#signup').click(function(){
-		alert('회원가입 완료!');
-		$('form').attr('action','${context}/student/signup')
-		.attr('method','post').submit();
-	}) 
-	$('#reset').click(function(){
-		alert('리셋!');
-	})
+	
  })
- 
  </script>
- 
- 

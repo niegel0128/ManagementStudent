@@ -19,12 +19,12 @@ import com.csy.web.mapper.StudentMapper;
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("classpath:META-INF/*-context.xml")
 public class StudentServiceImplTest {
-	@Autowired StudentBean StudentBean;
+	@Autowired StudentDTO StudentBean;
 	@Autowired SqlSession SqlSession;
 	@Test
 	public void testList() {
 		StudentMapper mapper = SqlSession.getMapper(StudentMapper.class);
-		List<StudentBean> list = new ArrayList<StudentBean>();
+		List<StudentDTO> list = new ArrayList<StudentDTO>();
 		list = mapper.selectAll();
 		assertThat(list.size(),is(not(0)));
 	}

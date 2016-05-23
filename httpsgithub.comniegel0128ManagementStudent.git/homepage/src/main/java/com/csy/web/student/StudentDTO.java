@@ -1,11 +1,11 @@
-package com.csy.web.admin;
+package com.csy.web.student;
 
 import org.springframework.stereotype.Component;
 
 @Component
-public class AdminBean {
+public class StudentDTO {
 	private String id,name,password,tel,email,useYn,profileImg,role,uid;
-
+	
 	public String getId() {
 		return id;
 	}
@@ -41,8 +41,7 @@ public class AdminBean {
 	public String getUid() {
 		return uid;
 	}
-	
-////////////////////////////////////////////////
+
 	public void setId(String id) {
 		this.id = id;
 	}
@@ -78,5 +77,4 @@ public class AdminBean {
 	public void setUid(String uid) {
 		this.uid = uid;
 	}
-	
 }

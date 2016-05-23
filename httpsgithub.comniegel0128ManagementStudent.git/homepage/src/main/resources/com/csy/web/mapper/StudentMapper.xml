@@ -3,7 +3,7 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.csy.web.mapper.StudentMapper">
-   <insert id="insert" parameterType="com.csy.web.student.StudentBean">
+   <insert id="insert" parameterType="com.csy.web.student.StudentDTO">
 	INSERT INTO student(
 		s_id
 		,s_name
@@ -25,20 +25,27 @@
 		,'1'
 		,date_format(now(),'%Y%m%d%H%i%s%f'));
    </insert>
-   <select id="login" resultType="com.csy.web.student.StudentBean" parameterType="com.csy.web.student.StudentBean">
+   <select id="login" resultType="com.csy.web.student.StudentDTO" parameterType="com.csy.web.student.StudentDTO">
       SELECT 
-       s_id as id
-      ,s_password as password
+         s_id as id
+		,s_name as name
+		,s_password as password
+		,s_tel as tel
+		,s_email as email
+		,s_use_yn as useYn
+	    ,s_profile_img as profileImg
+		,s_role as role
+		,s_uid as uid
        FROM student
       WHERE s_id = #{id} AND s_password = #{password}
    </select>
    <select id="count" resultType="int">
        SELECT count(*) FROM student
    </select>
-   <select id="selectAll" resultType="com.csy.web.student.StudentBean">
+   <select id="selectAll" resultType="com.csy.web.student.StudentDTO">
        SELECT * FROM student
    </select>
-   <select id="selectByName" resultType="com.csy.web.student.StudentBean" parameterType="com.csy.web.student.StudentBean">
+   <select id="selectByName" resultType="com.csy.web.student.StudentDTO" parameterType="com.csy.web.student.StudentDTO">
        SELECT * FROM student
        WHERE s_name = #{name}
    </select>
@@ -46,7 +53,7 @@
        SELECT * FROM = student
        WHERE s_id = #{id}
    </select>
-   <update id="update" parameterType="com.csy.web.student.StudentBean" >
+   <update id="update" parameterType="com.csy.web.student.StudentDTO" >
 	UPDATE student 
 	SET s_password = #{password},
 		s_profile_img = #{profileImg},	
@@ -55,7 +62,7 @@
 		s_email = #{email}	
 	WHERE s_id = #{id}
    </update>
-   <delete id="delete" parameterType="com.csy.web.student.StudentBean">
+   <delete id="delete" parameterType="com.csy.web.student.StudentDTO">
        UPDATE student 
        SET s_use_yn = 'y'
        where s_id = #{id}

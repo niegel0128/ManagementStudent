@@ -1,9 +1,7 @@
-package com.csy.web.admin;
+package com.csy.web.graph;
 
-import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.CoreMatchers.not;
-import static org.junit.Assert.assertThat;
-import static org.junit.Assert.fail;
+import static org.hamcrest.CoreMatchers.*;
+import static org.junit.Assert.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,19 +14,19 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
 
-import com.csy.web.mapper.AdminMapper;
+import com.csy.web.mapper.GraphMapper;
+
 @WebAppConfiguration
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("classpath:META-INF/*-context.xml")
-
-public class AdminServiceImplTest {
-	@Autowired AdminBean AdminBean;
+public class GraphServiceImplTest {
+	@Autowired GraphDTO graph;
 	@Autowired SqlSession SqlSession;
 	
 	@Test
 	public void testList() {
-		AdminMapper mapper = SqlSession.getMapper(AdminMapper.class);
-		List<AdminBean> list = new ArrayList<AdminBean>();
+		GraphMapper mapper = SqlSession.getMapper(GraphMapper.class);
+		List<GraphDTO> list = new ArrayList<GraphDTO>();
 		list = mapper.selectAll();
 		assertThat(list.size(),is(not(0)));
 	}
