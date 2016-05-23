@@ -17,9 +17,8 @@
       var jsonData = $.ajax({
           url: "${context}/graph/test",
           dataType: "json",
-          //data: {"type":aId},
           async: false,
-          success:function(data.string){
+          success:function(data){
         	  alert("1"); 
         	  alert(data.string); 
           }
@@ -29,7 +28,7 @@
       var data = new google.visualization.DataTable(jsonData);
 
       // Instantiate and draw our chart, passing in some options.
-      var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+      var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
       chart.draw(data, {width: 400, height: 240});
     }
 
